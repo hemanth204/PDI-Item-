@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="product_band_name" label="Product Brand Name" language="en" table="x_rtp_sv_pdi_product_band">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>product_band_name</element>
+            <help/>
+            <hint/>
+            <label>Product Brand Name</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_product_band</name>
+            <plural>Product Brand Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-14 19:47:58</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>e78a5bcadb208f00e93fb96c4e961978</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Product Brand Name</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_product_band_product_band_name_en</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-29 18:18:18</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

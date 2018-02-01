@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="PDI CostZone Import" max_length="40" name="x_rtp_sv_pdi_pdi_costzone_import" type="collection">
+        <element label="Cost Zone" max_length="40" name="cost_zone" type="string"/>
+        <element label="Cost Zone ID" max_length="40" name="cost_zone_id" type="string"/>
+        <element label="Cost Zone Key" max_length="100" name="cost_zone_key" type="string"/>
+        <element label="Vendor ID" max_length="40" name="vendor_id" type="string"/>
+        <element label="Vendor Key" max_length="40" name="vendor_key" type="string"/>
+    </element>
+</database>

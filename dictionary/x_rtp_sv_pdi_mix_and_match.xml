@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Mix and Match" max_length="40" name="x_rtp_sv_pdi_mix_and_match" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Item Description" max_length="60" name="item_description" type="string"/>
+        <element display="true" label="Mix and Match Item Number" max_length="40" name="mix_and_match_id" type="string"/>
+        <element label="Mix and Match Item Grp Description" max_length="100" name="mix_match_name" type="string"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+    </element>
+</database>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="McLane Table" max_length="40" name="x_rtp_sv_pdi_mclane_table" type="collection">
+        <element label="Area" max_length="4000" name="area" reference="cmn_location" reference_qual="u_type=Area^EQ" reference_qual_condition="u_type=Area^EQ" type="glide_list"/>
+        <element choice="3" label="McLane Division" max_length="40" name="mclane_division" type="string">
+            <choice>
+                <element label="HP (TX)-HP701123" sequence="0" value="HP (TX)"/>
+                <element label="ME (FL)-ME701226" sequence="1" value="ME (FL)"/>
+                <element label="SE (GA)-SE701008*incl RT675" sequence="2" value="SE (GA)"/>
+                <element label="SO (185)" sequence="3" value="SO (185)"/>
+                <element label="SO (LA)-SO701048" sequence="4" value="SO (LA)"/>
+                <element label="SW (TX)-SW701122" sequence="5" value="SW (TX)"/>
+            </choice>
+        </element>
+        <element label="NIS Number" max_length="32" name="nis_number" read_only="true" reference="x_rtp_sv_pdi_nis" type="reference"/>
+        <element label="NSS Number" max_length="32" name="nss_number" read_only="true" reference="x_rtp_sv_pdi_nss" type="reference"/>
+        <element display="true" label="Qty to distribute" max_length="40" name="qty_to_distribute" type="string"/>
+        <element label="Region" max_length="4000" name="region" reference="cmn_location" reference_qual="u_type=Region^EQ" reference_qual_condition="u_type=Region^EQ" type="glide_list"/>
+        <element choice="1" label="Site Traits" max_length="40" name="site_traits" type="choice">
+            <choice/>
+        </element>
+        <element label="Stores" max_length="4000" name="stores" reference="cmn_location" reference_qual="u_type=Store^EQ" reference_qual_condition="u_type=Store^EQ" type="glide_list"/>
+        <element choice="3" default="all_stores" label="Store Selection" max_length="40" name="store_selection" type="string">
+            <choice>
+                <element label="All Stores" sequence="0" value="all_stores"/>
+                <element label="Area" sequence="1" value="area"/>
+                <element label="Region" sequence="2" value="region"/>
+                <element label="Stores" sequence="3" value="stores"/>
+                <element label="Site Traits" sequence="4" value="site traits"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="nis_number"/>
+        </index>
+        <index name="index2">
+            <element name="nss_number"/>
+        </index>
+    </element>
+</database>

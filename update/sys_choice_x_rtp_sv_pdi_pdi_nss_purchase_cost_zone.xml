@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="cost_zone" table="x_rtp_sv_pdi_pdi_nss_purchase" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>HP (TX)</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_pdi_nss_purchase</name>
+            <sequence/>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-27 08:32:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>17654639db8a8740e93fb96c4e96194b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-27 08:33:08</sys_updated_on>
+            <value>hp (tx)</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ME (FL)</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_pdi_nss_purchase</name>
+            <sequence/>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-27 08:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61b5c239db8a8740e93fb96c4e961901</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-27 08:33:23</sys_updated_on>
+            <value>ME (FL)</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SE (GA)</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_pdi_nss_purchase</name>
+            <sequence/>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-27 08:33:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eac50639db8a8740e93fb96c4e9619ba</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-27 08:33:36</sys_updated_on>
+            <value>SE (GA)</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SO (185)</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_pdi_nss_purchase</name>
+            <sequence/>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-27 08:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>65d54639db8a8740e93fb96c4e9619ef</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-27 08:33:49</sys_updated_on>
+            <value>SO (185)</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SO (LA)</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_pdi_nss_purchase</name>
+            <sequence/>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-27 08:33:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8de54239db8a8740e93fb96c4e9619d8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-27 08:34:01</sys_updated_on>
+            <value>SO (LA)</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SW (TX)</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_pdi_nss_purchase</name>
+            <sequence/>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-27 08:34:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3fe5caf5db8a8740e93fb96c4e9619b6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-27 08:34:14</sys_updated_on>
+            <value>SW (TX)</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>cost_zone</element>
+            <name>x_rtp_sv_pdi_pdi_nss_purchase</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-27 08:32:58</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>5f05d97adbb30300351059d0cf961979</sys_id>
+            <sys_mod_count>12</sys_mod_count>
+            <sys_name>cost_zone</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_choice_x_rtp_sv_pdi_pdi_nss_purchase_cost_zone</sys_update_name>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-27 08:34:14</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="product_to_be_in_stock_by" label="Product to be in stock by" language="en" table="x_rtp_sv_pdi_nis">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>product_to_be_in_stock_by</element>
+            <help/>
+            <hint/>
+            <label>Product to be in stock by</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <plural>Product to be in stock by</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-07 17:53:44</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>394dbe73dbd04f400713d5ab5e96190e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Product to be in stock by</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_nis_product_to_be_in_stock_by_en</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-07 17:53:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="PDI Manufacturers Brand Import" max_length="40" name="x_rtp_sv_pdi_pdi_manufacturers_brand_import" type="collection">
+        <element label="Brand" max_length="40" name="brand" type="string"/>
+        <element label="Brand_ID" max_length="40" name="brand_id" type="string"/>
+        <element label="Brand_Key" max_length="40" name="brand_key" type="string"/>
+        <element label="Manufacturer_Key" max_length="40" name="manufacturer_key" type="string"/>
+        <element label="Product Manufacturer Id" max_length="40" name="product_manufacturer_id" type="string"/>
+        <element label="Product Manufacturer Name" max_length="40" name="product_manufacturer_name" type="string"/>
+        <element label="Size" max_length="40" name="size" type="string"/>
+        <element label="Size_Key" max_length="40" name="size_key" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="f591becddba8cb00e93fb96c4e9619fb" sys_domain="global" table="x_rtp_sv_pdi_vendor" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>1</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-14 19:44:46</sys_created_on>
+            <sys_id>6cd9db8adb208f00e93fb96c4e961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-14 19:44:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_name</element>
+            <position>2</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-14 19:45:44</sys_created_on>
+            <sys_id>be0a1f8adb208f00e93fb96c4e961986</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-14 19:45:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_id</element>
+            <position>3</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:37:37</sys_created_on>
+            <sys_id>94e731ffdb4d0700e93fb96c4e961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:37:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_tax_id</element>
+            <position>4</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:38:08</sys_created_on>
+            <sys_id>7bf731ffdb4d0700e93fb96c4e96198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:38:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_description</element>
+            <position>5</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:40:28</sys_created_on>
+            <sys_id>da8839ffdb4d0700e93fb96c4e961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:40:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_address_1</element>
+            <position>6</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:41:10</sys_created_on>
+            <sys_id>68b875ffdb4d0700e93fb96c4e961978</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:41:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_address_2</element>
+            <position>7</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:41:39</sys_created_on>
+            <sys_id>efc83dffdb4d0700e93fb96c4e961907</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:41:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_state</element>
+            <position>8</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:42:22</sys_created_on>
+            <sys_id>cef879ffdb4d0700e93fb96c4e961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:42:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_postal_code</element>
+            <position>9</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:42:49</sys_created_on>
+            <sys_id>7c193dffdb4d0700e93fb96c4e9619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_city</element>
+            <position>10</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:43:26</sys_created_on>
+            <sys_id>a539b133db8d0700e93fb96c4e961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:43:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_phone</element>
+            <position>11</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:44:35</sys_created_on>
+            <sys_id>ea793533db8d0700e93fb96c4e9619b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:44:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_alt_phone</element>
+            <position>12</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:45:00</sys_created_on>
+            <sys_id>2899b133db8d0700e93fb96c4e961956</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:45:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_fax</element>
+            <position>13</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:45:38</sys_created_on>
+            <sys_id>35b93533db8d0700e93fb96c4e961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:45:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_email_address</element>
+            <position>14</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:47:40</sys_created_on>
+            <sys_id>b72a3d33db8d0700e93fb96c4e9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:47:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_created_date</element>
+            <position>15</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-13 19:48:28</sys_created_on>
+            <sys_id>5f5afd33db8d0700e93fb96c4e9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-13 19:48:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>16</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-17 15:29:56</sys_created_on>
+            <sys_id>ff3500bedbf5cf00e93fb96c4e961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_vendor" sys_domain="global" view="Default view">f591becddba8cb00e93fb96c4e9619fb</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-17 15:29:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_rtp_sv_pdi_vendor</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-11 14:15:04</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f591becddba8cb00e93fb96c4e9619fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rtp_sv_pdi_vendor</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_ui_section_f591becddba8cb00e93fb96c4e9619fb</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-11 14:15:04</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

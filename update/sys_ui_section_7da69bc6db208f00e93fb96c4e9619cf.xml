@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Stores" section_id="7da69bc6db208f00e93fb96c4e9619cf" sys_domain="global" table="x_rtp_sv_pdi_nss" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-11-01 18:42:24</sys_created_on>
+            <sys_id>69210e2fdb8e47400713d5ab5e9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Stores" display_value="Stores" name="x_rtp_sv_pdi_nss" sys_domain="global" view="Default view">7da69bc6db208f00e93fb96c4e9619cf</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-11-01 18:42:24</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>choose_your_stores</element>
+            <position>1</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-11-01 18:42:24</sys_created_on>
+            <sys_id>e9210e2fdb8e47400713d5ab5e9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Stores" display_value="Stores" name="x_rtp_sv_pdi_nss" sys_domain="global" view="Default view">7da69bc6db208f00e93fb96c4e9619cf</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-11-01 18:42:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-11-01 18:42:24</sys_created_on>
+            <sys_id>6d210e2fdb8e47400713d5ab5e9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Stores" display_value="Stores" name="x_rtp_sv_pdi_nss" sys_domain="global" view="Default view">7da69bc6db208f00e93fb96c4e9619cf</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-11-01 18:42:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>area</element>
+            <position>3</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-11-01 18:42:24</sys_created_on>
+            <sys_id>ed210e2fdb8e47400713d5ab5e9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Stores" display_value="Stores" name="x_rtp_sv_pdi_nss" sys_domain="global" view="Default view">7da69bc6db208f00e93fb96c4e9619cf</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-11-01 18:42:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>region</element>
+            <position>4</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-11-01 18:42:24</sys_created_on>
+            <sys_id>61210e2fdb8e47400713d5ab5e9619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Stores" display_value="Stores" name="x_rtp_sv_pdi_nss" sys_domain="global" view="Default view">7da69bc6db208f00e93fb96c4e9619cf</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-11-01 18:42:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stores</element>
+            <position>5</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-11-01 18:42:24</sys_created_on>
+            <sys_id>e1210e2fdb8e47400713d5ab5e9619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Stores" display_value="Stores" name="x_rtp_sv_pdi_nss" sys_domain="global" view="Default view">7da69bc6db208f00e93fb96c4e9619cf</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-11-01 18:42:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-11-01 18:42:24</sys_created_on>
+            <sys_id>65210e2fdb8e47400713d5ab5e9619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Stores" display_value="Stores" name="x_rtp_sv_pdi_nss" sys_domain="global" view="Default view">7da69bc6db208f00e93fb96c4e9619cf</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-11-01 18:42:24</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Stores</caption>
+            <header>false</header>
+            <name>x_rtp_sv_pdi_nss</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-14 19:30:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7da69bc6db208f00e93fb96c4e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Stores</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_ui_section_7da69bc6db208f00e93fb96c4e9619cf</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-14 19:30:55</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

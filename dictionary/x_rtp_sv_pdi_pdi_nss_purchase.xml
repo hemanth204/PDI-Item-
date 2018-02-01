@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI NSS Purchase" max_length="40" name="x_rtp_sv_pdi_pdi_nss_purchase" type="collection">
+        <element choice="3" label="Cost Zone" max_length="40" name="cost_zone" type="string">
+            <choice>
+                <element label="HP (TX)" value="hp (tx)"/>
+                <element label="ME (FL)" value="ME (FL)"/>
+                <element label="SE (GA)" value="SE (GA)"/>
+                <element label="SO (185)" value="SO (185)"/>
+                <element label="SO (LA)" value="SO (LA)"/>
+                <element label="SW (TX)" value="SW (TX)"/>
+            </choice>
+        </element>
+        <element label="NSS Number" max_length="32" name="nss_number" read_only="true" reference="x_rtp_sv_pdi_nss" type="reference"/>
+        <element label="Purchase Package Cost" max_length="20" name="purchase_package_cost" type="currency"/>
+        <element display="true" label="Purchase Pack (PPK)" max_length="32" name="purchase_pack_ppk" reference="x_rtp_sv_pdi_package1" type="reference"/>
+        <index name="index">
+            <element name="nss_number"/>
+        </index>
+        <index name="index2">
+            <element name="purchase_pack_ppk"/>
+        </index>
+    </element>
+</database>

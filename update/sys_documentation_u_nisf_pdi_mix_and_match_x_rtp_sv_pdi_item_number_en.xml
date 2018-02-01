@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="x_rtp_sv_pdi_item_number" label="Item_Number" language="en" table="u_nisf_pdi_mix_and_match">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_rtp_sv_pdi_item_number</element>
+            <help/>
+            <hint/>
+            <label>Item_Number</label>
+            <language>en</language>
+            <name>u_nisf_pdi_mix_and_match</name>
+            <plural>Item_Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-25 05:34:00</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9ddbf8bedb3747000713d5ab5e9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Item_Number</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_u_nisf_pdi_mix_and_match_x_rtp_sv_pdi_item_number_en</sys_update_name>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-25 05:34:00</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

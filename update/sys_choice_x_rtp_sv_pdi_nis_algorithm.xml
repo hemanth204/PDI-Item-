@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="algorithm" table="x_rtp_sv_pdi_nis" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Shipping Charge</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence/>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:19:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>705f2684dbd54700e93fb96c4e96198f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:19:11</sys_updated_on>
+            <value>shipping_charge</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 Day Shelf Life</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>1</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:11:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8cad6e04dbd54700e93fb96c4e9619ab</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:11:25</sys_updated_on>
+            <value>1_day</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 Day Fresh Food</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>2</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:11:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90bdaa44dbd54700e93fb96c4e96192f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:11:47</sys_updated_on>
+            <value>1_dff</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 Day Shelf Life</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>3</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:12:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32cd6e44dbd54700e93fb96c4e9619b8</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:12:20</sys_updated_on>
+            <value>2_day</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Single Day Fresh Donut Algorithm</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>4</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:14:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4bed2e44dbd54700e93fb96c4e9619e7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:14:49</sys_updated_on>
+            <value>donut</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>KK Donut Algorithm</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>5</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:15:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d6e2284dbd54700e93fb96c4e9619a7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:15:31</sys_updated_on>
+            <value>kk_donut</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Multi Day Shelf Life</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>6</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:15:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4e9eee44dbd54700e93fb96c4e961942</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:16:13</sys_updated_on>
+            <value>multi_day</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not a DD Product</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>7</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:16:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77beae44dbd54700e93fb96c4e9619ab</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:16:57</sys_updated_on>
+            <value>not_dd_product</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>A DD Product  With No Suggestion</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>8</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:17:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a8fee644dbd54700e93fb96c4e9619b3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:18:37</sys_updated_on>
+            <value>no_sugg</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>algorithm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Replenishment Algorithm</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>9</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:18:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a03f2a84dbd54700e93fb96c4e9619db</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:18:42</sys_updated_on>
+            <value>replenish</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>algorithm</element>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 18:11:12</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>4b05997adbb30300351059d0cf9619f1</sys_id>
+            <sys_mod_count>29</sys_mod_count>
+            <sys_name>algorithm</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_choice_x_rtp_sv_pdi_nis_algorithm</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 18:19:11</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

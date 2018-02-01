@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>invoice_due_date</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-10-13 17:27:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>21e9fb91db718b000713d5ab5e96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>invoice_due_date</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_ui_policy_action_21e9fb91db718b000713d5ab5e96194d</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-10-13 17:27:57</sys_updated_on>
+        <table>x_rtp_sv_pdi_aid_subtask</table>
+        <ui_policy display_value="AID ST - Field Read Only">b86dd791db318b000713d5ab5e961996</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Rtp Sv Pdi Category" max_length="40" name="u_imp_tmpl_x_rtp_sv_pdi_category" type="collection">
+        <element attributes="import_attribute_name=Active,edge_encryption_enabled=true" label="Active" max_length="40" name="u_active" type="string"/>
+        <element attributes="import_attribute_name=Category id,edge_encryption_enabled=true" label="Category id" max_length="40" name="u_category_id" type="string"/>
+        <element attributes="import_attribute_name=Category Name,edge_encryption_enabled=true" label="Category Name" max_length="100" name="u_category_name" type="string"/>
+    </element>
+</database>

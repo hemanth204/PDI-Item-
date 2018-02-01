@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-08-17 19:28:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e6d23ec7db240340e93fb96c4e961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rtp_sv_pdi_product_size.x_rtp_sv_pdi.admin</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_security_acl display_value="x_rtp_sv_pdi_product_size">87dbe308dbec4f400713d5ab5e9619bb</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e6d23ec7db240340e93fb96c4e961970</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-08-17 19:28:45</sys_updated_on>
+        <sys_user_role display_value="x_rtp_sv_pdi.admin" name="x_rtp_sv_pdi.admin">2334782adb6c8f00e93fb96c4e96197f</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

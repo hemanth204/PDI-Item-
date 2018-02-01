@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>TH test value</name>
+        <run_once>true</run_once>
+        <script><![CDATA[var gr = new GlideRecord('x_rtp_sv_pdi_aid');
+if (gr.get('7076d547dbf10340e93fb96c4e961908')) {
+	gs.info("TRH - price_final_resolution value is " + gr.price_final_resolution);
+}
+else {
+	gs.info("TRH - unable to find record");
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>thorn</sys_created_by>
+        <sys_created_on>2017-10-18 16:06:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d4f61d47dbf10340e93fb96c4e96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TH test value</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_fix_d4f61d47dbf10340e93fb96c4e96195b</sys_update_name>
+        <sys_updated_by>thorn</sys_updated_by>
+        <sys_updated_on>2017-10-18 16:06:35</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

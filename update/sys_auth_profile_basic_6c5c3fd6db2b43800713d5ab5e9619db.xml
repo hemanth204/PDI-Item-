@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_auth_profile_basic">
+    <sys_auth_profile_basic action="INSERT_OR_UPDATE">
+        <name>PDI</name>
+        <password>Z6IHb7rDwdf7qYQ3N0xtrF7DWZeiCwlF</password>
+        <sys_class_name>sys_auth_profile_basic</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2018-01-11 20:02:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6c5c3fd6db2b43800713d5ab5e9619db</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PDI</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_auth_profile_basic_6c5c3fd6db2b43800713d5ab5e9619db</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2018-01-11 20:02:34</sys_updated_on>
+        <username>RPI\s-ServiceNowWebDev02</username>
+    </sys_auth_profile_basic>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Package" max_length="40" name="x_rtp_sv_pdi_package1" type="collection">
+        <element label="Package Id" max_length="40" name="package_id" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Package Name" max_length="40" name="package_name" type="string"/>
+    </element>
+</database>

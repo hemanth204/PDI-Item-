@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="x_rtp_sv_pdi_aid" label="AID Subtask" max_length="40" name="x_rtp_sv_pdi_aid_subtask" type="collection">
+        <element label="Delivery state" max_length="40" name="aid_state" type="string"/>
+        <element choice="1" label="Task Type" mandatory="true" max_length="30" name="aid_sub_task_type" type="choice">
+            <choice>
+                <element label="Gallon Task" sequence="0" value="gallon_task"/>
+                <element label="Price Task" sequence="1" value="price_task"/>
+                <element label="Merchandise" sequence="2" value="merchandise"/>
+                <element label="Update PDI" sequence="3" value="update_pdi"/>
+                <element label="Other" sequence="4" value="other"/>
+                <element label="Final" sequence="5" value="final"/>
+            </choice>
+        </element>
+        <element choice="1" label="AP Fuel Resolution" max_length="40" name="ap_fuel_solution" type="string">
+            <choice>
+                <element label="Tax rate difference" sequence="0" value="Tax rate difference"/>
+                <element label="Diversion" sequence="1" value="Diversion"/>
+                <element label="Invoice reconciles" sequence="2" value="Invoice reconciles"/>
+            </choice>
+        </element>
+        <element choice="1" label="Gallon Resolution" max_length="40" name="gallon_resolution" type="choice">
+            <choice>
+                <element label="Keep store received gallons" sequence="0" value="Keep store received gallons"/>
+                <element label="Accept vendor billed gallons" sequence="1" value="Accept vendor billed gallons"/>
+                <element label="Not RT load" sequence="2" value="Not RT load"/>
+            </choice>
+        </element>
+        <element choice="1" label="Price Resolution" max_length="40" name="price_resolution" type="choice">
+            <choice>
+                <element label="Accept vendor billed cost" sequence="0" value="Accept vendor billed cost"/>
+                <element label="Keep PDI cost" sequence="1" value="Keep PDI cost"/>
+                <element label="Use cost in comments field" sequence="2" value="Use cost in comments field"/>
+                <element label="Credit/Rebill" sequence="3" value="Credit/Rebill"/>
+            </choice>
+        </element>
+        <element label="Product" max_length="40" name="product" type="string"/>
+        <element label="Resolution" mandatory="true" max_length="40" name="resolution" read_only="true" type="string"/>
+    </element>
+</database>

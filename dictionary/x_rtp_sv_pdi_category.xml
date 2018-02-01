@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Category" max_length="40" name="x_rtp_sv_pdi_category" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Category ID" max_length="40" name="category_id" type="string"/>
+        <element display="true" label="Category Name" max_length="100" name="category_name" type="string"/>
+        <index name="index">
+            <element name="category_name"/>
+        </index>
+        <index name="index2">
+            <element name="category_id"/>
+        </index>
+    </element>
+</database>

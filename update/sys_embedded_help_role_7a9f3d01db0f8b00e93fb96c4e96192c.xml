@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_rtp_tax_return_p.tax_object_account_user" name="x_rtp_tax_return_p.tax_object_account_user">4da508fcdbeec780e93fb96c4e961982</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2017-12-13 17:13:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7a9f3d01db0f8b00e93fb96c4e96192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4da508fcdbeec780e93fb96c4e961982</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_embedded_help_role_7a9f3d01db0f8b00e93fb96c4e96192c</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-12-13 17:13:39</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

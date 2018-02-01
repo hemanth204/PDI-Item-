@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_rtp_sv_pdi_aid">stage=9^EQ<item endquery="false" field="stage" goto="false" newquery="false" operator="=" or="false" value="9"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Completed</label>
+        <name>Completed</name>
+        <order>600</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+        <sys_created_on>2017-10-04 13:46:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d4f0f8eadb2d4700e93fb96c4e961970</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Completed</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_process_flow_d4f0f8eadb2d4700e93fb96c4e961970</sys_update_name>
+        <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+        <sys_updated_on>2017-10-11 18:16:48</sys_updated_on>
+        <table>x_rtp_sv_pdi_aid</table>
+    </sys_process_flow>
+</record_update>

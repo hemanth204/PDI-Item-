@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_rtp_sv_pdi_aid_subtask</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>AID - Copy attachments</name>
+        <order>200</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var thistable = 'x_rtp_sv_pdi_aid_subtask';
+	var parenttable = 'x_rtp_sv_pdi_aid';
+	copyAttachments(parenttable, current.parent.sys_id.toString(), thistable, current.sys_id.toString());
+	
+	/*
+	Requires read and create application access to all scopes on sys_attachment and sys_attachment_doc tables
+ 	*/
+	function copyAttachments(donorTable, donorID, recipientTable, recipientID) {
+		var donorAttSysID;
+		var recipientAttSysID;
+		var newAttRecord;
+		var attRecord = new GlideRecord('sys_attachment');
+		attRecord.addQuery('table_name', donorTable);
+		attRecord.addQuery('table_sys_id', donorID);
+		attRecord.query();
+		while (attRecord.next()) {
+			donorAttSysID = attRecord.getValue('sys_id').toString();
+			newAttRecord = new GlideRecord('sys_attachment');
+			newAttRecord.initialize();
+			newAttRecord.setValue('size_bytes', attRecord.size_bytes);
+			newAttRecord.setValue('size_compressed', attRecord.size_compressed);
+			newAttRecord.setValue('image_width', attRecord.image_width);
+			newAttRecord.setValue('image_height', attRecord.image_height);
+			newAttRecord.setValue('file_name', attRecord.file_name);
+			newAttRecord.setValue('content_type', attRecord.content_type);
+			newAttRecord.setValue('compressed', attRecord.compressed);
+			newAttRecord.setValue('average_image_color', attRecord.average_image_color);
+			newAttRecord.setValue('table_name', recipientTable);
+			newAttRecord.setValue('table_sys_id', recipientID);
+			newAttRecord.update();
+			recipientAttSysID = newAttRecord.getValue('sys_id').toString();
+			copyData(donorAttSysID, recipientAttSysID);
+		}
+	}
+	
+	function copyData(fromrecord, torecord) {
+		gs.info("TRH - Copying data from " + fromrecord + " to " + torecord);
+		var gr = new GlideRecord('sys_attachment_doc');
+		gr.addQuery('sys_attachment', fromrecord);
+		gr.query();
+		while (gr.next()) {
+			gs.info("TRH - Got some data");
+			var newgr = new GlideRecord('sys_attachment_doc');
+			newgr.initialize();
+			newgr.setValue('data', gr.data);
+			newgr.setValue('length', gr.length);
+			newgr.setValue('position', gr.position);
+			newgr.setValue('sys_attachment', torecord);
+			newgr.update();
+		}
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>thorn</sys_created_by>
+        <sys_created_on>2017-10-18 10:21:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>abe5c807dbf90f000713d5ab5e961925</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>AID - Copy attachments</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_abe5c807dbf90f000713d5ab5e961925</sys_update_name>
+        <sys_updated_by>thorn</sys_updated_by>
+        <sys_updated_on>2017-10-18 12:02:46</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=abe5c807dbf90f000713d5ab5e961925"/>
+</record_update>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_list_control_embedded">
+    <sys_ui_list_control_embedded action="INSERT_OR_UPDATE">
+        <columns_condition/>
+        <empty_condition/>
+        <label/>
+        <link_condition><![CDATA[var answer;
+ if (parent.status == 9 || parent.status ==8 || parent.status ==3 ) {
+   answer = true; 
+} 
+else {
+  answer = false;
+}]]></link_condition>
+        <link_roles/>
+        <list_edit_ref_qual_tag/>
+        <name>x_rtp_sv_pdi_nis</name>
+        <new_condition/>
+        <new_roles/>
+        <omit_columns_if_empty>false</omit_columns_if_empty>
+        <omit_if_empty>false</omit_if_empty>
+        <omit_links>false</omit_links>
+        <related_list>x_rtp_sv_pdi_daily_delivery_table.nis_number</related_list>
+        <sys_class_name>sys_ui_list_control_embedded</sys_class_name>
+        <sys_created_by>v-ArjitArora</sys_created_by>
+        <sys_created_on>2017-12-12 13:03:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>51dc3364db874b00e93fb96c4e9619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rtp_sv_pdi_nis</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_ui_list_control_embedded_51dc3364db874b00e93fb96c4e9619f8</sys_update_name>
+        <sys_updated_by>v-ArjitArora</sys_updated_by>
+        <sys_updated_on>2017-12-12 13:03:54</sys_updated_on>
+    </sys_ui_list_control_embedded>
+</record_update>

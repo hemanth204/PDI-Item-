@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="gallon_resolution" table="x_rtp_sv_pdi_aid_subtask" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gallon_resolution</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Keep store received gallons</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_aid_subtask</name>
+            <sequence>0</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-10-13 15:14:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f95b5351db318b000713d5ab5e96198e</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-10-25 16:04:27</sys_updated_on>
+            <value>Keep store received gallons</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gallon_resolution</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Accept vendor billed gallons</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_aid_subtask</name>
+            <sequence>1</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-10-13 15:14:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d22b1751db318b000713d5ab5e96197f</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-10-25 16:04:23</sys_updated_on>
+            <value>Accept vendor billed gallons</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gallon_resolution</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not RT load</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_aid_subtask</name>
+            <sequence>2</sequence>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2017-12-21 13:44:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d7c9ea3db8f4300e93fb96c4e96195f</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2017-12-21 13:45:55</sys_updated_on>
+            <value>Not RT load</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>gallon_resolution</element>
+            <name>x_rtp_sv_pdi_aid_subtask</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-10-13 15:12:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>b205997adbb30300351059d0cf9619a9</sys_id>
+            <sys_mod_count>11</sys_mod_count>
+            <sys_name>gallon_resolution</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_choice_x_rtp_sv_pdi_aid_subtask_gallon_resolution</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-10-25 16:04:27</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

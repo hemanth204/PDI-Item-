@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="scheduled_import_set">
+    <scheduled_import_set action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <data_source/>
+        <map/>
+        <name>PDI Vendor</name>
+        <order/>
+        <parent/>
+        <post_script/>
+        <post_script_bool>false</post_script_bool>
+        <pre_script/>
+        <pre_script_bool>false</pre_script_bool>
+        <run_as display_value="Kannadhasan Amirthalingam SoftVision Support">080a96c6db3e3a005bd3d5ab5e96198d</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-09-13 19:58:47</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>daily</run_type>
+        <sys_class_name>scheduled_import_set</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-09-13 19:59:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>52bc31b3db8d0700e93fb96c4e961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PDI Vendor</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>scheduled_import_set_52bc31b3db8d0700e93fb96c4e961942</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-09-13 19:59:00</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </scheduled_import_set>
+</record_update>

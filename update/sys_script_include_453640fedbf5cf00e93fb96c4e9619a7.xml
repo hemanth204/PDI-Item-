@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_rtp_sv_pdi.u_popAID_Vendor</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>u_popAID_Vendor</name>
+        <script><![CDATA[var u_popAID_Vendor = Class.create();
+u_popAID_Vendor.prototype = {
+    initialize: function() {
+    },
+u_popAID_Vendor:function() {
+		var gp = ' ';
+		var a = current.invoice_type.getDisplayValue();
+		var grp = new GlideRecord('x_rtp_sv_pdi_vendor');
+		grp.addQuery('type',a);
+		grp.addQuery('sys_created_on', '>=','2017-10-20');
+		grp.query();
+		while(grp.next()) {
+			if (gp.length > 0) {
+				//build a comma separated string of groups if there is more than one
+				gp += (',' + grp.sys_id);
+				}
+			else {
+				gp = grp.sys_id;
+				}
+		}
+		// return Groups where assigned to is in those groups we use IN for lists
+		return 'sys_idIN' + gp;
+	
+	},
+    type: 'u_popAID_Vendor'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+        <sys_created_on>2017-10-17 15:36:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>453640fedbf5cf00e93fb96c4e9619a7</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>u_popAID_Vendor</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_include_453640fedbf5cf00e93fb96c4e9619a7</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-10-25 15:14:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

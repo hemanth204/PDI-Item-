@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Product Manufacturer" max_length="40" name="x_rtp_sv_pdi_product_manufacturer" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Product Manufacturer Id" max_length="40" name="product_manufacturer_id" type="string"/>
+        <element display="true" label="Product Manufacturer Name" max_length="100" name="product_manufacturer_name" type="string"/>
+        <index name="index">
+            <element name="product_manufacturer_id"/>
+            <element name="product_manufacturer_name"/>
+        </index>
+    </element>
+</database>

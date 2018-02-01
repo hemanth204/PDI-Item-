@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>PDI NIS - Mandatory Fields</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+	var action = g_form.getActionName();
+	if (action == 'sysverb_insert_and_stay')
+      return;
+	var vndr=g_form.getDisplayBox('vendor_name').value; 
+	
+	if(vndr=='Daily Delivery'){
+	g_form.setMandatory('applicable_algorithm',true);
+	g_form.setMandatory('1100_dallas',true);	
+	g_form.setMandatory('1133_georgia',true);
+	g_form.setMandatory('1137_lakeland',true);
+	g_form.setMandatory('1145_louisiana',true);
+	}
+	
+//  if(vndr=='MCLANE CO INC'){
+// 		g_form.setMandatory('vendor_item_number_vin', false);
+// 	}
+	
+// if(vndr!=='MCLANE CO INC'){
+// 		g_form.setMandatory('vendor_item_number_vin', true);
+// 	}
+	
+// if(g_form.getValue('mix_match_item')=='true'){
+// 		g_form.setMandatory('mix_match', true);
+// 	}
+	    g_form.setMandatory('product_description', true);
+	    //g_form.setMandatory('mix_match', true);
+		g_form.setMandatory('pdi_category', true);
+		g_form.setMandatory('pdi_group', true);
+		g_form.setMandatory('pdi_subgroup', true);
+	    g_form.setMandatory('product_size', true);
+		g_form.setMandatory('product_brand', true);
+ 		g_form.setMandatory('product_manufacturer', true);
+	    g_form.setMandatory('vendor_name', true);
+		g_form.setMandatory('vendor_item_number', true);
+		g_form.setMandatory('item_re_claimable', true);
+		g_form.setMandatory('item_re_orderable', true);
+	    g_form.setMandatory('merchandising_package_type', true);
+	    g_form.setMandatory('allow_partial_pack', true);
+	
+	  
+	
+	if(g_form.getValue('product_description') == '' || g_form.getValue('pdi_category') == '' ||g_form.getValue('pdi_group') == ''|| g_form.getValue('pdi_subgroup') == '' || g_form.getValue('product_size') == '' || g_form.getValue('product_brand') == '' || g_form.getValue('product_manufacturer') == '' || g_form.getValue('item_re_claimable') == ''|| g_form.getValue('item_re_orderable') == ''|| g_form.getValue('merchandising_package_type') == ''|| g_form.getValue('allow_partial_pack') == ''||g_form.getValue('vendor_name') == ''||g_form.getValue('vendor_item_number') == '' )
+		return false;
+		//g_form.addInfoMessage('The below fields in this form are mandatory');	
+	
+	if(vndr=='Daily Delivery'){
+	if(g_form.getValue('applicable_algorithm') == '' || g_form.getValue('1100_dallas') == '' || g_form.getValue('1133_georgia') == '' || g_form.getValue('1137_lakeland') == '' || g_form.getValue('1145_louisiana') == '')
+	return false;
+	
+// if(vndr=='MCLANE CO INC'){
+// 	if(g_form.getValue('vendor_item_number_vin') == '')
+// 		return false;
+// 		}
+		
+// if(vndr!='MCLANE CO INC'){
+// 	if(g_form.getValue('vendor_item_number_vin') == '')
+// 		return false;
+// 		}
+		
+// 		if(g_form.getValue('mix_match_item')=='true'){
+// 		if(g_form.getValue('mix_match') == '')
+// 		return false;
+//	}
+	}
+	}
+
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+        <sys_created_on>2017-09-18 10:17:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>86562919db19c700e93fb96c4e9619c1</sys_id>
+        <sys_mod_count>152</sys_mod_count>
+        <sys_name>PDI NIS - Mandatory Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_client_86562919db19c700e93fb96c4e9619c1</sys_update_name>
+        <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+        <sys_updated_on>2017-12-15 10:57:51</sys_updated_on>
+        <table>x_rtp_sv_pdi_nis</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

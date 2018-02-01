@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="force_out_mclane" label="Force out" language="en" table="x_rtp_sv_pdi_nis">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>force_out_mclane</element>
+            <help/>
+            <hint/>
+            <label>Force out</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <plural>Force out</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:33:15</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>b1b62d71db564380e93fb96c4e96198d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Force out</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_nis_force_out_mclane_en</sys_update_name>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:36:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_vend_masked_phone" label="Vend_Masked_Phone" language="en" table="x_rtp_sv_pdi_pdi_import_new">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_vend_masked_phone</element>
+            <help/>
+            <hint/>
+            <label>Vend_Masked_Phone</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_pdi_import_new</name>
+            <plural>Vend_Masked_Phones</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:15:57</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>4ef6826cdbf7c3000713d5ab5e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Vend_Masked_Phone</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_pdi_import_new_u_vend_masked_phone_en</sys_update_name>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:15:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

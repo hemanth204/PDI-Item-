@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="1fb79194db3f83000713d5ab5e9619c8" sys_domain="global" table="x_rtp_sv_pdi_pdi_import_new" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>97b79194db3f83000713d5ab5e9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_postal_code</element>
+            <position>1</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>9fb79194db3f83000713d5ab5e9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_city</element>
+            <position>2</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>13b79194db3f83000713d5ab5e9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_description</element>
+            <position>3</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>93b79194db3f83000713d5ab5e9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_name</element>
+            <position>4</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>17b79194db3f83000713d5ab5e9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_phone</element>
+            <position>5</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>97b79194db3f83000713d5ab5e9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_state</element>
+            <position>6</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>1bb79194db3f83000713d5ab5e9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_tax_id</element>
+            <position>7</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>9bb79194db3f83000713d5ab5e9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>8</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>1fb79194db3f83000713d5ab5e9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>9fb79194db3f83000713d5ab5e9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_address_1</element>
+            <position>10</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>13b79194db3f83000713d5ab5e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_address_2</element>
+            <position>11</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>93b79194db3f83000713d5ab5e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_alt_phone</element>
+            <position>12</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>17b79194db3f83000713d5ab5e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_created_date</element>
+            <position>13</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>97b79194db3f83000713d5ab5e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_email_address</element>
+            <position>14</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>1bb79194db3f83000713d5ab5e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_fax</element>
+            <position>15</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>9bb79194db3f83000713d5ab5e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_id</element>
+            <position>16</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>1fb79194db3f83000713d5ab5e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>17</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>9fb79194db3f83000713d5ab5e9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>18</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_id>13b79194db3f83000713d5ab5e9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vendtype_description</element>
+            <position>19</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:33:13</sys_created_on>
+            <sys_id>372db924dbf7c3000713d5ab5e9619ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:33:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_allow_at_site</element>
+            <position>20</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:38:25</sys_created_on>
+            <sys_id>506e79a4dbf7c3000713d5ab5e96194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:38:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_alt_description</element>
+            <position>21</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:43:11</sys_created_on>
+            <sys_id>4e7f75a4dbf7c3000713d5ab5e961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:43:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_class</element>
+            <position>22</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:46:06</sys_created_on>
+            <sys_id>6c2046e4dbf7c3000713d5ab5e9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:46:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_contact_name</element>
+            <position>23</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:47:43</sys_created_on>
+            <sys_id>5c80cae4dbf7c3000713d5ab5e961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:47:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_county</element>
+            <position>24</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:48:24</sys_created_on>
+            <sys_id>a6a00ee4dbf7c3000713d5ab5e9619bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:48:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vend_created_date</element>
+            <position>25</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:50:30</sys_created_on>
+            <sys_id>dd210228dbf7c3000713d5ab5e961948</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:50:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_deactivated</element>
+            <position>26</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:56:16</sys_created_on>
+            <sys_id>b9728e28dbf7c3000713d5ab5e9619e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:56:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_deactivated_date</element>
+            <position>27</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:57:07</sys_created_on>
+            <sys_id>86a28268dbf7c3000713d5ab5e9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:57:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_default_apterms_key</element>
+            <position>28</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:57:42</sys_created_on>
+            <sys_id>66c24668dbf7c3000713d5ab5e96191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:57:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_default_curr_id</element>
+            <position>29</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:58:22</sys_created_on>
+            <sys_id>e4f24668dbf7c3000713d5ab5e9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:58:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_duns_id</element>
+            <position>30</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 10:59:31</sys_created_on>
+            <sys_id>51338668dbf7c3000713d5ab5e961948</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 10:59:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_export_vendor_id</element>
+            <position>31</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:00:44</sys_created_on>
+            <sys_id>cb738e28dbf7c3000713d5ab5e9619b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:00:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_fuel_apterms_key</element>
+            <position>32</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:02:07</sys_created_on>
+            <sys_id>dfc38e68dbf7c3000713d5ab5e961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:02:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_fuel_cost_begin_time</element>
+            <position>33</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:03:23</sys_created_on>
+            <sys_id>0e1406a8dbf7c3000713d5ab5e9619c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:03:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_fuel_cost_lifetime</element>
+            <position>34</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:04:09</sys_created_on>
+            <sys_id>8d440e68dbf7c3000713d5ab5e9619c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:04:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_fuel_cost_life_units</element>
+            <position>35</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:05:01</sys_created_on>
+            <sys_id>f1740aa8dbf7c3000713d5ab5e961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:05:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_fuel_invc_has_deftax</element>
+            <position>36</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:05:50</sys_created_on>
+            <sys_id>bda40ea8dbf7c3000713d5ab5e9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:05:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_fuel_invc_has_frt</element>
+            <position>37</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:07:02</sys_created_on>
+            <sys_id>2fe4cea8dbf7c3000713d5ab5e9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:07:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_fuel_invc_units</element>
+            <position>38</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:08:00</sys_created_on>
+            <sys_id>e525cea8dbf7c3000713d5ab5e9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:08:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_fuel_in_mp_invc_option</element>
+            <position>39</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:09:22</sys_created_on>
+            <sys_id>217546e8dbf7c3000713d5ab5e9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:09:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_internal_vendor</element>
+            <position>40</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:11:22</sys_created_on>
+            <sys_id>32e50ae8dbf7c3000713d5ab5e9619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:11:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_key</element>
+            <position>41</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:12:55</sys_created_on>
+            <sys_id>65468ae8dbf7c3000713d5ab5e961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:12:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_masked_fax</element>
+            <position>42</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:15:05</sys_created_on>
+            <sys_id>51c68a2cdbf7c3000713d5ab5e9619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:15:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_masked_phone</element>
+            <position>43</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:15:57</sys_created_on>
+            <sys_id>c2f6422cdbf7c3000713d5ab5e961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:15:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_od_driver_required</element>
+            <position>44</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:16:55</sys_created_on>
+            <sys_id>9437826cdbf7c3000713d5ab5e9619ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:16:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_od_odometer_required</element>
+            <position>45</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:18:03</sys_created_on>
+            <sys_id>a8778a6cdbf7c3000713d5ab5e96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:18:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_od_time_required</element>
+            <position>46</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:18:53</sys_created_on>
+            <sys_id>8da74e6cdbf7c3000713d5ab5e9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:18:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_od_vehicle_required</element>
+            <position>47</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:19:35</sys_created_on>
+            <sys_id>97c702acdbf7c3000713d5ab5e96190e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:19:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_on_hold</element>
+            <position>48</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:20:18</sys_created_on>
+            <sys_id>adf78a6cdbf7c3000713d5ab5e9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:20:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_recon_zero_frt</element>
+            <position>49</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:21:24</sys_created_on>
+            <sys_id>fd3846acdbf7c3000713d5ab5e9619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:21:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_scac_id</element>
+            <position>50</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:22:10</sys_created_on>
+            <sys_id>cd6886acdbf7c3000713d5ab5e961934</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:22:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_splc_code</element>
+            <position>51</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:22:55</sys_created_on>
+            <sys_id>c09802acdbf7c3000713d5ab5e9619f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:22:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_use_default_terms</element>
+            <position>52</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:24:06</sys_created_on>
+            <sys_id>65d84aacdbf7c3000713d5ab5e9619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:24:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_vendtype_key</element>
+            <position>53</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:25:02</sys_created_on>
+            <sys_id>0709ceacdbf7c3000713d5ab5e961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:25:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendo11r_name</element>
+            <position>54</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:25:50</sys_created_on>
+            <sys_id>fe3982acdbf7c3000713d5ab5e961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:25:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vend_masked_alt_phone</element>
+            <position>55</position>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2018-01-18 11:31:37</sys_created_on>
+            <sys_id>238a82ecdbf7c3000713d5ab5e9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_pdi_import_new" sys_domain="global" view="Default view">1fb79194db3f83000713d5ab5e9619c8</sys_ui_section>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2018-01-18 11:31:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_rtp_sv_pdi_pdi_import_new</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2018-01-17 13:11:07</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1fb79194db3f83000713d5ab5e9619c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rtp_sv_pdi_pdi_import_new</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_ui_section_1fb79194db3f83000713d5ab5e9619c8</sys_update_name>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2018-01-17 13:11:07</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

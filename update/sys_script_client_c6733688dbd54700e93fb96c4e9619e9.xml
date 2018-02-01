@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>component_items</field>
+        <global>true</global>
+        <messages/>
+        <name>PDI-NSS Making Labels bold on</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   
+	var field_product_description = g_form.getValue('product_description'); 
+	var prodDesc = g_form.getLabel('x_rtp_sv_pdi_nss.product_description');
+	  var fieldElement_product_description = g_form.getControl(field_product_description); 
+	if(field_product_description == "")
+		{
+        prodDesc.style.fontStyle='italic';
+	    prodDesc.style.fontWeight='bold';
+		}
+	
+	var field_pdi_category = g_form.getValue('pdi_category'); 
+	var pdicat = g_form.getLabel('x_rtp_sv_pdi_nss.pdi_category');
+	  var fieldElement_pdi_category = g_form.getControl(field_pdi_category); 
+	if(field_pdi_category == "")
+		{
+        pdicat.style.fontStyle='italic';
+	    pdicat.style.fontWeight='bold';
+		}
+var field_pdi_group = g_form.getValue('pdi_group'); 
+	var pdigrp = g_form.getLabel('x_rtp_sv_pdi_nss.pdi_group');
+	  var fieldElement_pdi_group = g_form.getControl(field_pdi_group); 
+	if(field_pdi_group == "")
+		{
+        pdigrp.style.fontStyle='italic';
+	    pdigrp.style.fontWeight='bold';
+		}
+		
+var field_pdi_subgroup = g_form.getValue('pdi_subgroup'); 
+	var PDISubgroup = g_form.getLabel('x_rtp_sv_pdi_nss.pdi_subgroup');
+	  var fieldElement_pdi_subgroup = g_form.getControl(field_pdi_subgroup); 
+	if(field_pdi_subgroup == "")
+		{
+        PDISubgroup.style.fontStyle='italic';
+	    PDISubgroup.style.fontWeight='bold';
+		}
+	
+	var field_product_brand = g_form.getValue('product_brand'); 
+	var PDIBrand = g_form.getLabel('x_rtp_sv_pdi_nss.product_brand');
+	  var fieldElement_product_brand = g_form.getControl(field_product_brand); 
+	if(field_product_brand == "")
+		{
+        PDIBrand.style.fontStyle='italic';
+	    PDIBrand.style.fontWeight='bold';
+		}
+	
+	var field_product_manufacturer = g_form.getValue('product_manufacturer'); 
+	var PDIManu = g_form.getLabel('x_rtp_sv_pdi_nss.product_manufacturer');
+	  var fieldElement_product_manufacturer = g_form.getControl(field_product_manufacturer); 
+	if(field_product_manufacturer == "")
+		{
+        PDIManu.style.fontStyle='italic';
+	    PDIManu.style.fontWeight='bold';
+		}
+var field_vendor_name = g_form.getValue('vendor_name'); 
+	var Vendorname = g_form.getLabel('x_rtp_sv_pdi_nss.vendor_name');
+	  var fieldElement_vendor_name = g_form.getControl(field_vendor_name); 
+	if(field_vendor_name == "")
+		{
+        Vendorname.style.fontStyle='italic';
+	    Vendorname.style.fontWeight='bold';
+		}
+	
+var field_vendor_item_number_vin = g_form.getValue('vendor_item_number_vin'); 
+	var VItemNum = g_form.getLabel('x_rtp_sv_pdi_nss.vendor_item_number_vin');
+	  var fieldElement_vendor_item_number_vin = g_form.getControl(field_vendor_item_number_vin); 
+	if(field_vendor_item_number_vin == "")
+		{
+        VItemNum.style.fontStyle='italic';
+	    VItemNum.style.fontWeight='bold';
+		}
+var field_item_re_orderable = g_form.getValue('item_re_orderable'); 
+	var iro = g_form.getLabel('x_rtp_sv_pdi_nss.item_re_orderable');
+	  var fieldElement_item_re_orderable = g_form.getControl(field_item_re_orderable); 
+	if(field_item_re_orderable != "")
+		{
+        iro.style.fontStyle='italic';
+	    iro.style.fontWeight='bold';
+		}
+	
+var field_item_re_claimable = g_form.getValue('item_re_claimable'); 
+	var irc = g_form.getLabel('x_rtp_sv_pdi_nss.item_re_claimable');
+	  var fieldElement_item_re_claimable = g_form.getControl(field_item_re_claimable); 
+	if(field_item_re_claimable != "")
+		{
+        irc.style.fontStyle='italic';
+	    irc.style.fontWeight='bold';
+		}
+		
+var field_purchase_package_ppk = g_form.getValue('purchase_package_ppk'); 
+	var ppk = g_form.getLabel('x_rtp_sv_pdi_nss.purchase_package_ppk');
+	  var fieldElement_purchase_package_ppk = g_form.getControl(field_purchase_package_ppk); 
+	if(field_purchase_package_ppk == "")
+		{
+        ppk.style.fontStyle='italic';
+	    ppk.style.fontWeight='bold';
+		}
+	
+var field_upc_code = g_form.getValue('upc_code'); 
+	var Upccode = g_form.getLabel('x_rtp_sv_pdi_nss.upc_code');
+	  var fieldElement_upc_code = g_form.getControl(field_upc_code); 
+	if(field_upc_code == "")
+		{
+        Upccode.style.fontStyle='italic';
+	    Upccode.style.fontWeight='bold';
+ 		}
+// var field_product_brand = g_form.getValue('product_brand'); 
+// 	var prodBrand = g_form.getLabel('x_rtp_sv_pdi_nss.product_brand');
+// 	  var fieldElement_product_brand = g_form.getControl(field_product_brand); 
+// 	if(field_product_brand == "")
+// 		{
+//         prodBrand.style.fontStyle='italic';
+// 	    prodBrand.style.fontWeight='bold';
+// 		}
+		
+// var field_product_manufacturer = g_form.getValue('product_manufacturer'); 
+// 	var prodManu = g_form.getLabel('x_rtp_sv_pdi_nss.product_manufacturer');
+// 	  var fieldElement_product_manufacturer = g_form.getControl(field_product_manufacturer); 
+// 	if(field_product_manufacturer == "")
+// 		{
+//         prodManu.style.fontStyle='italic';
+// 	    prodManu.style.fontWeight='bold';
+// 		}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>v-ArjitArora</sys_created_by>
+        <sys_created_on>2017-09-14 19:10:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c6733688dbd54700e93fb96c4e9619e9</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>PDI-NSS Making Labels bold on</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_client_c6733688dbd54700e93fb96c4e9619e9</sys_update_name>
+        <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+        <sys_updated_on>2017-12-12 12:27:16</sys_updated_on>
+        <table>x_rtp_sv_pdi_nss</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

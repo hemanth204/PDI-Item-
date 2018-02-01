@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Pack Size Purchase" max_length="40" name="x_rtp_sv_pdi_pack_size_purchase" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="3" label="Cost Zone" max_length="40" name="cost_zone" type="string">
+            <choice>
+                <element label="HP (TX)" value="hP (TX)"/>
+                <element label="ME (FL)" value="ME (FL)"/>
+                <element label="SE (GA)" value="SE (GA)"/>
+                <element label="SO (185)" value="SO (185)"/>
+                <element label="SO (LA)" value="SO (LA)"/>
+                <element label="SW (TX)" value="SW (TX)"/>
+            </choice>
+        </element>
+        <element label="depth (inches)" mandatory="true" max_length="30" name="depth_inches" type="string"/>
+        <element label="height (inches)" mandatory="true" max_length="30" name="height_inches" type="string"/>
+        <element label="NIS Number" mandatory="true" max_length="32" name="nis_number" read_only="true" reference="x_rtp_sv_pdi_nis" type="reference"/>
+        <element label="# of units" mandatory="true" max_length="30" name="ppk_of_units" type="string"/>
+        <element label="Purchase Package Cost" max_length="20" name="purchase_package_cost" type="currency"/>
+        <element display="true" label="Purchase Pack (PPK)" max_length="40" name="purchase_pack_ppk" reference="x_rtp_sv_pdi_package1" reference_qual="javascript:new u_popPackage().u_popPackage()" type="reference" use_reference_qualifier="advanced"/>
+        <element active="false" label="Purchase Pack (PPK)" max_length="32" name="purchase_pkg_type_ppk" reference="x_rtp_sv_pdi_package1" reference_qual="javascript:new u_popPackage().u_popPackage()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="UPC Code" mandatory="true" max_length="30" name="upc_code" type="string"/>
+        <element label="width (inches)" mandatory="true" max_length="30" name="width_inches" type="string"/>
+        <index name="index">
+            <element name="nis_number"/>
+        </index>
+        <index name="index2">
+            <element name="purchase_pack_ppk"/>
+        </index>
+        <index name="index3">
+            <element name="purchase_pkg_type_ppk"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="sys_db_object" relationship="27900e83c3713000bac1addbdfba8fb6" sys_domain="global" table="sys_security_acl" version="2" view="">
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_security_acl</name>
+            <parent>sys_db_object</parent>
+            <position/>
+            <relationship display_value="Table Access Controls">27900e83c3713000bac1addbdfba8fb6</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-19 08:41:16</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89eab09bdbf90340e93fb96c4e96199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_security_acl</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_ui_list_sys_db_object_27900e83c3713000bac1addbdfba8fb6_null</sys_update_name>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-19 08:41:16</sys_updated_on>
+            <sys_user display_value="Hemanth Siramdasu SoftVision Support">13286706dbc80b4092b23c00ad96197c</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

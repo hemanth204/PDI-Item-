@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Package Information" language="en" table="x_rtp_sv_pdi_package_information">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Package Information</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_package_information</name>
+            <plural>Package Informations</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-19 08:23:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7fc674d7dbf90340e93fb96c4e9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Package Information</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_package_information__en</sys_update_name>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-19 08:23:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

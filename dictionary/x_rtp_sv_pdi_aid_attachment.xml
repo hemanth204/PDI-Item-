@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="AID Attachment" max_length="40" name="x_rtp_sv_pdi_aid_attachment" type="collection">
+        <element label="Attachment" max_length="32" name="attachment" reference="sys_attachment" type="reference"/>
+        <element display="true" label="Attachment Name" mandatory="true" max_length="40" name="attachment_name" type="string"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Attachment Number" max_length="40" name="attachment_number" read_only="true" type="string" use_dynamic_default="true"/>
+        <element label="Invoice Number" max_length="32" name="invoice_number" read_only="true" reference="x_rtp_sv_pdi_aid" type="reference"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="attachment"/>
+        </index>
+        <index name="index2">
+            <element name="invoice_number"/>
+        </index>
+    </element>
+</database>

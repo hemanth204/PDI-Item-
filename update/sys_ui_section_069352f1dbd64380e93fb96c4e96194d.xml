@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="069352f1dbd64380e93fb96c4e96194d" sys_domain="global" table="x_rtp_sv_pdi_package_information" version="3" view="nisf">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nis_number</element>
+            <position>0</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2018-01-04 16:20:56</sys_created_on>
+            <sys_id>4d86cf48db6bcb400713d5ab5e96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_package_information" sys_domain="global" view="12884565db850300e93fb96c4e96195b">069352f1dbd64380e93fb96c4e96194d</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2018-01-04 16:20:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>package1</element>
+            <position>1</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2018-01-04 16:20:56</sys_created_on>
+            <sys_id>cd86cf48db6bcb400713d5ab5e96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_package_information" sys_domain="global" view="12884565db850300e93fb96c4e96195b">069352f1dbd64380e93fb96c4e96194d</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2018-01-04 16:20:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>2</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2018-01-04 16:20:56</sys_created_on>
+            <sys_id>4186cf48db6bcb400713d5ab5e961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_package_information" sys_domain="global" view="12884565db850300e93fb96c4e96195b">069352f1dbd64380e93fb96c4e96194d</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2018-01-04 16:20:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>upc</element>
+            <position>3</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2018-01-04 16:20:56</sys_created_on>
+            <sys_id>c186cf48db6bcb400713d5ab5e961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_package_information" sys_domain="global" view="12884565db850300e93fb96c4e96195b">069352f1dbd64380e93fb96c4e96194d</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2018-01-04 16:20:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2018-01-04 16:20:56</sys_created_on>
+            <sys_id>4586cf48db6bcb400713d5ab5e961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_package_information" sys_domain="global" view="12884565db850300e93fb96c4e96195b">069352f1dbd64380e93fb96c4e96194d</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2018-01-04 16:20:56</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>height_in</element>
+            <position>5</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2018-01-04 16:20:56</sys_created_on>
+            <sys_id>c586cf48db6bcb400713d5ab5e961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_package_information" sys_domain="global" view="12884565db850300e93fb96c4e96195b">069352f1dbd64380e93fb96c4e96194d</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2018-01-04 16:20:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>width_in</element>
+            <position>6</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2018-01-04 16:20:56</sys_created_on>
+            <sys_id>4986cf48db6bcb400713d5ab5e961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_package_information" sys_domain="global" view="12884565db850300e93fb96c4e96195b">069352f1dbd64380e93fb96c4e96194d</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2018-01-04 16:20:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>depth_in</element>
+            <position>7</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2018-01-04 16:20:56</sys_created_on>
+            <sys_id>c986cf48db6bcb400713d5ab5e961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_package_information" sys_domain="global" view="12884565db850300e93fb96c4e96195b">069352f1dbd64380e93fb96c4e96194d</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2018-01-04 16:20:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2018-01-04 16:20:56</sys_created_on>
+            <sys_id>4d86cf48db6bcb400713d5ab5e961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rtp_sv_pdi_package_information" sys_domain="global" view="12884565db850300e93fb96c4e96195b">069352f1dbd64380e93fb96c4e96194d</sys_ui_section>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2018-01-04 16:20:56</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_rtp_sv_pdi_package_information</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-11-08 19:49:19</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>069352f1dbd64380e93fb96c4e96194d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rtp_sv_pdi_package_information</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_ui_section_069352f1dbd64380e93fb96c4e96194d</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-11-08 19:49:19</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="NISF" name="nisf">12884565db850300e93fb96c4e96195b</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

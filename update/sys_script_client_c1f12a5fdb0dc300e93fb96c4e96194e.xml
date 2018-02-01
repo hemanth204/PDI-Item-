@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>PDI NIS - Making Field Label as  Bold</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	
+	var field_product_description = g_form.getValue('product_description'); 
+	var prodDesc = g_form.getLabel('x_rtp_sv_pdi_nis.product_description');
+	  var fieldElement_product_description = g_form.getControl(field_product_description); 
+	if(field_product_description == "")
+		{
+        prodDesc.style.fontStyle='italic';
+	    prodDesc.style.fontWeight='bold';
+		}
+	
+
+	var field_mix_match = g_form.getValue('mix_match'); 
+	var mix_match = g_form.getLabel('x_rtp_sv_pdi_nis.mix_match');
+	  var fieldElement_mix_match = g_form.getControl(field_mix_match); 
+	if(field_mix_match == "")
+		{
+        mix_match.style.fontStyle='italic';
+	    mix_match.style.fontWeight='bold';
+		}
+	
+	var field_pdi_category = g_form.getValue('pdi_category'); 
+	var pdi_category = g_form.getLabel('x_rtp_sv_pdi_nis.pdi_category');
+	  var fieldElement_pdi_category = g_form.getControl(field_pdi_category); 
+	if(field_pdi_category == "")
+		{
+        pdi_category.style.fontStyle='italic';
+	    pdi_category.style.fontWeight='bold';
+		}
+	
+	var field_pdi_group = g_form.getValue('pdi_group'); 
+	var pdi_group = g_form.getLabel('x_rtp_sv_pdi_nis.pdi_group');
+	  var fieldElement_pdi_group = g_form.getControl(field_pdi_group); 
+	if(field_pdi_group == "")
+		{
+        pdi_group.style.fontStyle='italic';
+	    pdi_group.style.fontWeight='bold';
+		}
+	
+	var field_pdi_subgroup = g_form.getValue('pdi_subgroup'); 
+	var pdi_subgroup = g_form.getLabel('x_rtp_sv_pdi_nis.pdi_subgroup');
+	  var fieldElement_pdi_subgroup = g_form.getControl(field_pdi_subgroup); 
+	if(field_pdi_subgroup == "")
+		{
+        pdi_subgroup.style.fontStyle='italic';
+	    pdi_subgroup.style.fontWeight='bold';
+		}
+	
+	var field_pdi_vendor_name = g_form.getValue('vendor_name'); 
+	var vendor_name = g_form.getLabel('x_rtp_sv_pdi_nis.vendor_name');
+	  var fieldElement_vendor_name = g_form.getControl(field_pdi_vendor_name); 
+	if(field_pdi_vendor_name== "")
+		{
+        vendor_name.style.fontStyle='italic';
+	    vendor_name.style.fontWeight='bold';
+		}
+	
+	
+    var field_vendor_item_number_vin = g_form.getValue('vendor_item_number_vin'); 
+	var VIN = g_form.getLabel('x_rtp_sv_pdi_nis.vendor_item_number_vin');
+	  var fieldElement_vendor_item_number_vin = g_form.getControl(field_vendor_item_number_vin); 
+	if(field_vendor_item_number_vin == "")
+		{
+        VIN.style.fontStyle='italic';
+	    VIN.style.fontWeight='bold';
+		}
+	
+	var field_pdi_item_re_claimable = g_form.getValue('item_re_claimable'); 
+	var item_re_claimable = g_form.getLabel('x_rtp_sv_pdi_nis.item_re_claimable');
+	  var fieldElement_item_re_claimable = g_form.getControl(field_pdi_item_re_claimable); 
+	if(field_pdi_item_re_claimable!= "")
+		{
+        item_re_claimable.style.fontStyle='italic';
+	    item_re_claimable.style.fontWeight='bold';
+		}
+	
+	var field_pdi_item_re_orderable = g_form.getValue('item_re_orderable'); 
+	var item_re_orderable = g_form.getLabel('x_rtp_sv_pdi_nis.item_re_orderable');
+	  var fieldElement_item_re_orderable = g_form.getControl(field_pdi_item_re_orderable); 
+	if(field_pdi_item_re_orderable!= "")
+		{
+        item_re_orderable.style.fontStyle='italic';
+	    item_re_orderable.style.fontWeight='bold';
+		}
+	
+	
+	var field_allow_partial_pack = g_form.getValue('allow_partial_pack'); 
+	var app = g_form.getLabel('x_rtp_sv_pdi_nis.allow_partial_pack');
+	  var fieldElement_allow_partial_pack = g_form.getControl(field_allow_partial_pack); 
+	if(field_allow_partial_pack != "")
+		{
+        app.style.fontStyle='italic';
+	    app.style.fontWeight='bold';
+		}
+	
+	
+	
+	
+	var field_pdi_merchandising_package_type = g_form.getValue('merchandising_package_type'); 
+	var merchandising_package_type = g_form.getLabel('x_rtp_sv_pdi_nis.merchandising_package_type');
+	  var fieldElement_merchandising_package_type = g_form.getControl(field_pdi_merchandising_package_type); 
+	if(field_pdi_merchandising_package_type== "")
+		{
+        merchandising_package_type.style.fontStyle='italic';
+	    merchandising_package_type.style.fontWeight='bold';
+		}
+	
+	var field_pdi_product_size = g_form.getValue('product_size'); 
+	var product_size = g_form.getLabel('x_rtp_sv_pdi_nis.product_size');
+	  var fieldElement_product_size = g_form.getControl(field_pdi_product_size); 
+	if(field_pdi_product_size == "")
+		{
+        product_size.style.fontStyle='italic';
+	    product_size.style.fontWeight='bold';
+		}
+	
+	var field_pdi_product_brand = g_form.getValue('product_brand'); 
+	var product_brand = g_form.getLabel('x_rtp_sv_pdi_nis.product_brand');
+	  var fieldElement_product_brand = g_form.getControl(field_pdi_product_brand); 
+	if(field_pdi_product_brand == "")
+		{
+        product_brand.style.fontStyle='italic';
+	    product_brand.style.fontWeight='bold';
+		}
+	
+	
+    var field_pdi_product_manufacturer = g_form.getValue('product_manufacturer'); 
+	var product_manufacturer = g_form.getLabel('x_rtp_sv_pdi_nis.product_manufacturer');
+	 var fieldElement_product_manufacturer = g_form.getControl(field_pdi_product_manufacturer); 
+	if(field_pdi_product_manufacturer == "")
+		{
+        product_manufacturer.style.fontStyle='italic';
+	    product_manufacturer.style.fontWeight='bold';
+		}
+	
+	var field_applicable_algorithm = g_form.getValue('applicable_algorithm'); 
+	var AppAlg = g_form.getLabel('x_rtp_sv_pdi_nis.applicable_algorithm');
+	  var fieldElement_applicable_algorithm = g_form.getControl(field_applicable_algorithm); 
+	if(field_applicable_algorithm == "")
+		{
+        AppAlg.style.fontStyle='italic';
+	    AppAlg.style.fontWeight='bold';
+		}
+	
+	var field_1100_dallas = g_form.getValue('1100_dallas'); 
+	var dallas = g_form.getLabel('x_rtp_sv_pdi_nis.1100_dallas');
+	  var fieldElement_1100_dallas = g_form.getControl(field_1100_dallas); 
+	if(field_1100_dallas == "")
+		{
+        dallas.style.fontStyle='italic';
+	    dallas.style.fontWeight='bold';
+		}
+	
+	var field_1133_georgia = g_form.getValue('1133_georgia'); 
+	var georgia = g_form.getLabel('x_rtp_sv_pdi_nis.1133_georgia');
+	  var fieldElement_1133_georgia = g_form.getControl(field_1133_georgia); 
+	if(field_1133_georgia == "")
+		{
+        georgia.style.fontStyle='italic';
+	    georgia.style.fontWeight='bold';
+		}
+	
+	var field_1145_louisiana = g_form.getValue('1145_louisiana'); 
+	var louisiana = g_form.getLabel('x_rtp_sv_pdi_nis.1145_louisiana');
+	  var fieldElement_1145_louisiana = g_form.getControl(field_1145_louisiana); 
+	if(field_1145_louisiana == "")
+		{
+        louisiana.style.fontStyle='italic';
+	    louisiana.style.fontWeight='bold';
+		}
+	var field_1137_lakeland = g_form.getValue('1137_lakeland'); 
+	var lakeland = g_form.getLabel('x_rtp_sv_pdi_nis.1137_lakeland');
+	  var fieldElement_1137_lakeland = g_form.getControl(field_1137_lakeland); 
+	if(field_1137_lakeland == "")
+		{
+        lakeland.style.fontStyle='italic';
+	    lakeland.style.fontWeight='bold';
+		}
+	
+	
+// 	//var description = document.getElementById('label.incident.u_html_1');
+// 	var field_allow_partial_pack = g_form.getValue('allow_partial_pack'); 
+// 	var AllowPartialPack = g_form.getLabel('x_rtp_sv_pdi_nis.allow_partial_pack');
+// 	 var fieldElement_allow_partial_pack = g_form.getControl(field_allow_partial_pack); 
+// 	if(field_allow_partial_pack!= "")
+// 		{
+//         AllowPartialPack.style.fontStyle='italic';
+// 	    AllowPartialPack.style.fontWeight='bold';
+// 		}
+	
+	
+
+
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha_local</sys_created_by>
+        <sys_created_on>2017-09-12 09:26:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c1f12a5fdb0dc300e93fb96c4e96194e</sys_id>
+        <sys_mod_count>79</sys_mod_count>
+        <sys_name>PDI NIS - Making Field Label as  Bold</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_client_c1f12a5fdb0dc300e93fb96c4e96194e</sys_update_name>
+        <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+        <sys_updated_on>2017-12-12 12:10:06</sys_updated_on>
+        <table>x_rtp_sv_pdi_nis</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="no_attachment=true" audit="true" extends="task" label="Account Invoice Descrepancy" max_length="40" name="x_rtp_sv_pdi_aid" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Additional comments" max_length="40" name="additional_comments" type="journal_input"/>
+        <element attributes="scale=5" label="Cost Difference($)" max_length="40" name="amount_difference" read_only="true" type="float"/>
+        <element attributes="scale=2" label="Gallon Difference" max_length="40" name="amount_gallon_difference" read_only="true" type="float"/>
+        <element label="Approval due date" max_length="40" name="approval_due_date" read_only="true" type="glide_date"/>
+        <element label="Approved/Rejected by" max_length="32" name="approved_rejected_by" reference="sys_user" type="reference"/>
+        <element label="AP Fuel Comments" max_length="300" name="ap_fuel_comments" type="string"/>
+        <element label="AP Fuel Resolution" max_length="40" name="ap_fuel_resolution" read_only="true" type="string"/>
+        <element label="AP Lead Comments" max_length="300" name="ap_lead_comments" type="string"/>
+        <element label="AR Comments" max_length="500" name="ar_comments" type="string"/>
+        <element label="BOL Number" max_length="40" name="bol_number" type="string"/>
+        <element attributes="format=none,scale=5," label="Delivered Cost" max_length="40" name="delivered_amount" type="float"/>
+        <element attributes="format=none,scale=2" label="Delivered Gallons" max_length="40" name="delivered_gallon_amount" type="float"/>
+        <element label="Delivery date" max_length="40" name="delivery_date" type="glide_date"/>
+        <element label="Fuel product" max_length="40" name="fuel_product" read_only="true" type="string"/>
+        <element label="Fuel state" max_length="40" name="fuel_state" read_only="true" type="string"/>
+        <element label="Gallon Difference" max_length="40" name="gallon_difference" type="boolean"/>
+        <element label="Gallon Final Resolution" max_length="128" name="gallon_final_resolution" type="string"/>
+        <element active="false" label="Galoon Difference" max_length="40" name="galoon_difference" type="boolean"/>
+        <element label="Inv Analyst Comments" max_length="300" name="invanalyst_comments" type="string"/>
+        <element attributes="format=none,scale=5" label="Invoiced Cost" max_length="40" name="invoice_amount" type="float"/>
+        <element label="Invoice Comments" max_length="512" name="invoice_comments" type="string"/>
+        <element label="Invoice due date" max_length="40" name="invoice_due_date" type="glide_date"/>
+        <element attributes="format=none,scale=2" label="Invoiced Gallons" max_length="40" name="invoice_gallon_amount" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Invoice Number" max_length="40" name="invoice_number" type="string"/>
+        <element choice="1" label="Type" mandatory="true" max_length="40" name="invoice_type" type="choice">
+            <choice>
+                <element label="Merchandise" sequence="0" value="merchandise"/>
+                <element label="Fuel/Freight" sequence="1" value="fuel"/>
+            </choice>
+        </element>
+        <element label="Inv Fuel Comments" max_length="500" name="inv_fuel_comments" type="string"/>
+        <element label="Pay as Adjusted" max_length="40" name="pay_as_adjusted" type="boolean"/>
+        <element label="Pay as Invoiced" max_length="40" name="pay_as_invoiced" type="boolean"/>
+        <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Prepared by" max_length="32" name="prepared_by" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Cost Difference" max_length="40" name="price_difference" type="boolean"/>
+        <element label="Price Final Resolution" max_length="128" name="price_final_resolution" type="string"/>
+        <element choice="1" label="Product Type" max_length="40" name="product_type" type="choice">
+            <choice>
+                <element label="Beverages" value="40"/>
+                <element label="Food Programs and Services" value="30"/>
+                <element label="Packaged Goods and Services" value="20"/>
+                <element label="Tobacco" value="10"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1" label="Stage" max_length="40" name="stage" read_only="true" type="string">
+            <choice>
+                <element label="Not Started" sequence="0" value="1"/>
+                <element label="Work in Progress" sequence="1" value="2"/>
+                <element label="Submitted" sequence="2" value="3"/>
+                <element label="Approved" sequence="3" value="4"/>
+                <element label="Completed" sequence="5" value="9"/>
+                <element label="Rejected" sequence="7" value="8"/>
+            </choice>
+        </element>
+        <element label="S&amp;D comments" max_length="500" name="s_d_comments" type="string"/>
+        <element choice="1" label="Team" max_length="40" name="team" type="string">
+            <choice>
+                <element label="A/P Fuel" sequence="0" value="A/P Fuel"/>
+                <element label="A/P Freight" sequence="1" value="A/P Freight"/>
+            </choice>
+        </element>
+        <element label="Vendor" max_length="32" name="vendor" reference="x_rtp_sv_pdi_vendor" reference_qual="javascript: new u_popAID_Vendor().u_popAID_Vendor()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Vendor Number" max_length="40" name="vendor_number" read_only="true" type="string"/>
+    </element>
+</database>

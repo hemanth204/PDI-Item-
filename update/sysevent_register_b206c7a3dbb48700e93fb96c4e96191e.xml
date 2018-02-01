@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>x_rtp_sv_pdi.nis_rejected</event_name>
+        <fired_by>Email notifications</fired_by>
+        <queue/>
+        <suffix>nis_rejected</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-08-31 20:25:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b206c7a3dbb48700e93fb96c4e96191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rtp_sv_pdi.nis_rejected</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sysevent_register_b206c7a3dbb48700e93fb96c4e96191e</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-08-31 20:25:19</sys_updated_on>
+        <table>x_rtp_sv_pdi_nis</table>
+    </sysevent_register>
+</record_update>

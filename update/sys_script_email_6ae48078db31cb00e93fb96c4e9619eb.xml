@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>PDI_AID_Notify_Approver</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+/* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+/* Optional GlideRecord */ event) {
+	
+	template.print("<html><head></head><body><center>");
+    
+	//Hello Message
+	var item1 = new GlideRecord("x_rtp_sv_pdi_aid");
+	item1.addQuery("sys_id", current.sys_id);
+	item1.query();
+	
+	while(item1.next()) {
+		name = item1.submitter_name.getDisplayValue();
+		dname = name.split(" ");
+// 		var lnk1 = '<a href="' + item1.getLink() + '"' + 'style="font-weight:normal;text-decoration:none;color:#ffffff">';
+// template.print("<table style='font-family:verdana;border:none;font-size:20px;font-weight:500;' width='100%'>");
+// 		template.print("<tr style='border:none;font-size:20px;'>");
+		
+// 		template.print("<td style='padding:20px 0px 0px 20px;color:#022169;font-size:22px;' colspan='2'>"+ dname[0] + "," + "<br/>");
+//         template.print("Your approval has been requested for a new item.");
+// 		// BEGIN TABLE FOR ITERATED LABELS AND VALUES
+// 		template.print("<table style='width:100%;padding-top:20px;color:#676767;font-size:16px;'>");
+// 		//Label
+// 		template.print("<tr>");
+// 		template.print("<td style='font-size:16px;font-family:verdana;text-align:right;padding-right:10px;padding-top:2px;font-size:16px;'>"+ item1.number.getLabel() + "</td><td style='font-size:16px;font-family:verdana;word-break:break-all;'>" + item1.number.getDisplayValue() + "</td>");
+// 		template.print("</tr>");
+		
+// 		//Item Description
+// 		template.print("<tr>");
+// 		template.print("<td style='font-weight:500;font-size:16px;font-family:verdana;text-align:right;padding-right:10px;padding-top:2px;font-size:16px;'>"+ item1.product_description.getLabel() + "</td><td style='font-size:16px;word-break:break-all;font-family:verdana;'>" + item1.product_description.getDisplayValue() + "</td>");
+// 		template.print("</tr>");
+		
+// 		//Submitter Name
+// 		template.print("<tr>");
+// 		template.print("<td style='font-weight:500;font-size:16px;font-family:verdana;text-align:right;padding-right:10px;padding-top:2px;font-size:16px;'>"+ item1.submitter_name.getLabel() + "</td><td style='font-size:16px;word-break:break-all;font-family:verdana;'>" + item1.submitter_name.getDisplayValue() + "</td>");
+// 		template.print("</tr>");
+		
+// 		//PDI category
+// 		template.print("<tr>");
+// 		template.print("<td style='font-weight:500;font-size:16px;font-family:verdana;text-align:right;padding-right:10px;padding-top:2px;font-size:16px;'>"+ item1.pdi_category.getLabel() + "</td><td style='font-size:16px;word-break:break-all;font-family:verdana;'>" + item1.pdi_category.getDisplayValue() + "</td>");
+// 		template.print("</tr>");
+		
+		
+// 		//PDI category
+// 		template.print("<tr>");
+// 		template.print("<td style='font-weight:500;font-size:16px;font-family:verdana;text-align:right;padding-right:10px;padding-top:2px;font-size:16px;'>"+ item1.pdi_group.getLabel() + "</td><td style='font-size:16px;word-break:break-all;font-family:verdana;'>" + item1.pdi_group.getDisplayValue() + "</td>");
+// 		template.print("</tr>");
+	
+		
+// 		//PDI Subgroup
+// 		template.print("<tr>");
+// 		template.print("<td style='font-weight:500;font-size:16px;font-family:verdana;text-align:right;padding-right:10px;padding-top:2px;font-size:16px;'>"+ item1.pdi_subgroup.getLabel() + "</td><td style='font-size:16px;word-break:break-all;font-family:verdana;'>" + item1.pdi_subgroup.getDisplayValue() + "</td>");
+// 		template.print("</tr>");
+// template.print("</table>");
+// template.print("<table style='width:100%;padding-top:20px;'>");
+// template.print("<tr>");
+// template.print("<td style='text-align:center; width:100%;'>");
+// template.print("<table width='100%' border='0' cellspacing='0' cellpadding='0'>");
+// template.print("<tr>");
+// template.print("<td>");
+// template.print("<center><table cellspacing='0' cellpadding='0'><tr><td align='center' width='100' bgcolor='#00A94F' style='color: #ffffff; padding:15px;'><a style='font-size:16px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block'><span style='color: #ffffff;'>"+ lnk1 + " Accept</a></span></a></td><td>&nbsp;&nbsp;&nbsp;</td><td align='center' width='100' bgcolor='#EA1F27' style='color: #ffffff; padding:15px;'><a style='font-size:16px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block'><span style='color: #ffffff;'>"+ lnk1 +"Deny</a></span></a></td></tr></table></a></center>");
+// template.print("<center><table border='0' cellspacing='0' cellpadding='0'>");
+// template.print("<tr><td colspan='3'>&nbsp;</td></tr>");
+// template.print("<tr>");
+// template.print("<td colspan='3' style='padding: 4px 32px 6px 32px; border: 1px #676767 solid;' align='center'><a style='font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; font-color: #5c5c5c; text-decoration: none; display: inline-block;'>"+ lnk1 +"Click here to view request</a></td>");
+// template.print("</tr>");
+// template.print("</table></center>");
+// template.print("</td>");
+// template.print("</tr>");
+// template.print("</table>");
+// template.print("</td>");
+// template.print("</tr>");
+// template.print("</table>");
+			
+// template.print("</td>");
+// template.print("</tr>");
+// template.print("</table>");
+// template.print("</center>");
+// template.print("</body>");
+// template.print("</html>");
+	}
+	
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+        <sys_created_on>2017-10-11 10:21:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6ae48078db31cb00e93fb96c4e9619eb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>PDI_AID_Notify_Approver</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_email_6ae48078db31cb00e93fb96c4e9619eb</sys_update_name>
+        <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+        <sys_updated_on>2017-10-11 10:28:36</sys_updated_on>
+    </sys_script_email>
+</record_update>

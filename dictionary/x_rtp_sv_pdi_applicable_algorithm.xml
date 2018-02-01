@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Applicable Algorithm" max_length="40" name="x_rtp_sv_pdi_applicable_algorithm" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Value" max_length="40" name="value" type="string"/>
+    </element>
+</database>

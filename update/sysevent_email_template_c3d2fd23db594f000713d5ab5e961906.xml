@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_rtp_sv_pdi_nss</collection>
+        <email_layout display_value="">75d7728cdb39c7000713d5ab5e96199c</email_layout>
+        <message/>
+        <message_html><![CDATA[<p>${mail_script:PDI_NSS_Notify_Approver}</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>PDI-NSS-Notify-Approver</name>
+        <sms_alternate/>
+        <subject>Your approval has been requested for a new shipper item</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>v-ArjitArora</sys_created_by>
+        <sys_created_on>2017-09-25 10:54:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c3d2fd23db594f000713d5ab5e961906</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>PDI-NSS-Notify-Approver</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sysevent_email_template_c3d2fd23db594f000713d5ab5e961906</sys_update_name>
+        <sys_updated_by>v-ArjitArora</sys_updated_by>
+        <sys_updated_on>2017-10-19 10:11:13</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

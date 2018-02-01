@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>pdi_category</field>
+        <global>true</global>
+        <messages/>
+        <name>PDI NIS - Category Clear</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (!isLoading || newValue == '' && g_form.getValue('pdi_category') == '') {
+	   g_form.setValue('pdi_group', '');
+	   g_form.setValue('pdi_subgroup', '');  
+	   g_form.setValue('product_size', '');
+	   g_form.setValue('product_brand', '');
+	   g_form.setValue('product_manufacturer', '');
+	   g_form.setValue('vendor_name', '');
+   }  
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-09-29 18:08:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9d3bf338db2943000713d5ab5e9619b3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>PDI NIS - Category Clear</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_client_9d3bf338db2943000713d5ab5e9619b3</sys_update_name>
+        <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+        <sys_updated_on>2017-12-11 15:04:42</sys_updated_on>
+        <table>x_rtp_sv_pdi_nis</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

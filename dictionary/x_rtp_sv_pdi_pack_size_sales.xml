@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Pack Size Sales" max_length="40" name="x_rtp_sv_pdi_pack_size_sales" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Area" max_length="4000" name="area" reference="cmn_location" reference_qual="u_type=Area^EQ" reference_qual_condition="u_type=Area^EQ" type="glide_list"/>
+        <element label="depth (inches)" max_length="30" name="depth_inches" type="string"/>
+        <element label="height (inches)" max_length="30" name="height_inches" type="string"/>
+        <element choice="3" default="all_stores" label="Location" max_length="100" name="location" type="string">
+            <choice>
+                <element label="All Stores" sequence="0" value="all_stores"/>
+                <element label="Area" sequence="1" value="area"/>
+                <element label="Region" sequence="2" value="region"/>
+                <element label="Stores" sequence="3" value="stores"/>
+                <element label="Site Traits" sequence="4" value="site traits"/>
+            </choice>
+        </element>
+        <element label="NIS Number" max_length="32" name="nis_number" read_only="true" reference="x_rtp_sv_pdi_nis" type="reference"/>
+        <element label="Region" max_length="4000" name="region" reference="cmn_location" reference_qual="u_type=Region^EQ" reference_qual_condition="u_type=Region^EQ" type="glide_list"/>
+        <element choice="1" label="Related PPK" max_length="32" name="related_ppk" reference="x_rtp_sv_pdi_pack_size_purchase" reference_qual="javascript:new u_popPPK().u_popPPK()" type="reference" use_reference_qualifier="advanced">
+            <choice/>
+        </element>
+        <element label="Retail" max_length="20" name="retail" type="currency"/>
+        <element display="true" label="Sales Package" max_length="32" name="sales_package" reference="x_rtp_sv_pdi_package1" reference_qual="javascript:new u_popPackage().u_popPackage()" type="reference" use_reference_qualifier="advanced"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;&#10;&#9;&#9;&#9;&#10;    current.sales_pkg_per_ppk = (current.related_ppk)/(current.sp_of_units);  &#10;&#9;&#9;&#10;&#9;&#9;&#10;&#10;&#9;&#10;&#9;return current.sales_pkg_per_ppk;  // return the calculated value&#10;&#10;})(current);" default="0" label="Sales Pkg per PPK" max_length="30" name="sales_pkg_per_ppk" read_only="true" type="string"/>
+        <element label="Sales Pkg Type" max_length="100" name="sales_pkg_type" type="string"/>
+        <element choice="1" label="Site Traits" max_length="40" name="site_traits" type="choice">
+            <choice/>
+        </element>
+        <element label="# of units" max_length="30" name="sp_of_units" type="string"/>
+        <element label="Stores" max_length="4000" name="stores" reference="cmn_location" reference_qual="u_type=Store^EQ" reference_qual_condition="u_type=Store^EQ" type="glide_list"/>
+        <element label="UPC code" max_length="30" name="upc_code" type="string"/>
+        <element label="width (inches)" max_length="30" name="width_inches" type="string"/>
+        <index name="index">
+            <element name="nis_number"/>
+        </index>
+        <index name="index2">
+            <element name="sales_package"/>
+        </index>
+        <index name="index3">
+            <element name="related_ppk"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="product_size" label="Product size" language="en" table="x_rtp_sv_pdi_nis">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>product_size</element>
+            <help/>
+            <hint/>
+            <label>Product size</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <plural>Product sizes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-08 18:02:22</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>4ad80c1cdb208f400713d5ab5e9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Product size</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_nis_product_size_en</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-08 18:02:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

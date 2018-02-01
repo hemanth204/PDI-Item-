@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>group_name</col_name_string>
+        <index_col_name element="group_name" name="x_rtp_sv_pdi_group">0b7de63fdb2603405bd3d5ab5e961958</index_col_name>
+        <logical_table_name>x_rtp_sv_pdi_group</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-12-11 18:38:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>16cf3bd4db4b0b00e93fb96c4e9619fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rtp_sv_pdi_group</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_index_x_rtp_sv_pdi_group_group_name</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-12-11 18:38:13</sys_updated_on>
+        <table display_value="PDI Group" name="x_rtp_sv_pdi_group">048ae344dbec4f400713d5ab5e961967</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

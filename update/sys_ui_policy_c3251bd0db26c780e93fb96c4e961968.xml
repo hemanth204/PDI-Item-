@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_rtp_sv_pdi_aid_subtask">assignment_group=e6be2b76dbed87004f2bb96c4e961968^ap_fuel_resolutionISEMPTY^NQassignment_group=fecca04edb2ecb005bd3d5ab5e961932^EQ<item endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="false" value="e6be2b76dbed87004f2bb96c4e961968"/>
+            <item endquery="false" field="ap_fuel_resolution" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="assignment_group" goto="false" newquery="true" operator="=" or="false" value="fecca04edb2ecb005bd3d5ab5e961932"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>800</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>AID Fuel Task Fields</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-11-16 19:02:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c3251bd0db26c780e93fb96c4e961968</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>AID Fuel Task Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_ui_policy_c3251bd0db26c780e93fb96c4e961968</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2018-01-02 19:42:12</sys_updated_on>
+        <table>x_rtp_sv_pdi_aid_subtask</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

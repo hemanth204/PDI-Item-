@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="NISF PDI Mix And Match" max_length="40" name="u_nisf_pdi_mix_and_match" type="collection">
+        <element label="ItemMMItemGrp_Description" max_length="40" name="x_rtp_sv_pdi_itemmmitemgrp_description" type="string"/>
+        <element label="ItemMM_Item_Number" max_length="40" name="x_rtp_sv_pdi_itemmm_item_number" type="string"/>
+        <element label="ItemUPC_Number" max_length="40" name="x_rtp_sv_pdi_itemupc_number" type="string"/>
+        <element label="Item_Description" max_length="40" name="x_rtp_sv_pdi_item_description" type="string"/>
+        <element label="Item_Number" max_length="40" name="x_rtp_sv_pdi_item_number" type="string"/>
+    </element>
+</database>

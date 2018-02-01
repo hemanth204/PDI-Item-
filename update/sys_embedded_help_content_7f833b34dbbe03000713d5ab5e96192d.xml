@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <content><![CDATA[  <h1 class="title topictitle1">Group roles</h1>    <div class="body conbody">    <p class="p">Create a group role to control access to features and capabilities in applications for all      members in a group.</p>    <div class="p">Group roles have the following characteristics.<ul class="ul" id="sys_group_has_role_list-setup.dita__ul_kfj_pnq_dx"><li class="li">Roles: roles assigned to the group. All members of the group have privileges of these          roles. </li><li class="li">Group Members: lists all users that belong to this group.</li><li class="li">Groups: groups can belong to other groups. For example, all HR groups roll up under the          group <span class="ph uicontrol">HR</span>. All members of the <span class="ph uicontrol">HR</span> group have          the privileges of the roles for each group.</li></ul></div>    <p class="p">Review the list of groups to verify that the intended roles are present in the database. </p>  </div>]]></content>
+        <last_sync>2018-01-14 20:47:04</last_sync>
+        <modifier>normal</modifier>
+        <name>sys_group_has_role_list-normal</name>
+        <page>sys_group_has_role_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2017-11-30 20:46:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7f833b34dbbe03000713d5ab5e96192d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>sys_group_has_role_list-normal</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_embedded_help_content_7f833b34dbbe03000713d5ab5e96192d</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-01-14 20:47:04</sys_updated_on>
+        <version>j</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=7f833b34dbbe03000713d5ab5e96192d"/>
+</record_update>

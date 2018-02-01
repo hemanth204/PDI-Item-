@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="growth_percentage" label="Growth percentage" language="en" table="x_rtp_sv_pdi_nis">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>growth_percentage</element>
+            <help/>
+            <hint/>
+            <label>Growth percentage</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <plural>Growth percentages</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-07 18:14:21</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>3bf14777dbd04f400713d5ab5e961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Growth percentage</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_nis_growth_percentage_en</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-07 18:14:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="daily_delivery_distribution_center" table="x_rtp_sv_pdi_nis" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>daily_delivery_distribution_center</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1133-Daily Delivery DC - Georgia</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>0</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-21 20:14:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff926350dbf40300e93fb96c4e961914</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-21 20:15:16</sys_updated_on>
+            <value>dc_1133</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>daily_delivery_distribution_center</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1136-Daily Delivery DC - Pampano</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>1</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-21 20:14:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>29b32750dbf40300e93fb96c4e961949</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-21 20:15:22</sys_updated_on>
+            <value>dc_1136</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>daily_delivery_distribution_center</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1137-Daily Delivery DC - Lakeland</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>2</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-21 20:15:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ded3a750dbf40300e93fb96c4e961965</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-21 20:16:13</sys_updated_on>
+            <value>dc_1137</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>daily_delivery_distribution_center</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1145-Daily Delivery DC - Louisiana</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>3</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-21 20:15:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>27f36f50dbf40300e93fb96c4e96192d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-21 20:16:15</sys_updated_on>
+            <value>dc_1145</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>daily_delivery_distribution_center</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1100-Daily Delivery DC - Dallas</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sequence>4</sequence>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-21 20:15:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d042b50dbf40300e93fb96c4e961902</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-21 20:16:17</sys_updated_on>
+            <value>dc_1100</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>daily_delivery_distribution_center</element>
+            <name>x_rtp_sv_pdi_nis</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-21 20:14:18</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>0705d97adbb30300351059d0cf961915</sys_id>
+            <sys_mod_count>14</sys_mod_count>
+            <sys_name>daily_delivery_distribution_center</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_choice_x_rtp_sv_pdi_nis_daily_delivery_distribution_center</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-21 20:16:15</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

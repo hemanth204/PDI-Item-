@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="sales_pkg_per_ppk" label="Sales Pkg per PPK" language="en" table="x_rtp_sv_pdi_pack_size_sales">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>sales_pkg_per_ppk</element>
+            <help/>
+            <hint/>
+            <label>Sales Pkg per PPK</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_pack_size_sales</name>
+            <plural>Sales Pkg per PPKs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-08 18:27:57</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>850257d9db344300e93fb96c4e9619db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Sales Pkg per PPK</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_pack_size_sales_sales_pkg_per_ppk_en</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-08 18:27:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

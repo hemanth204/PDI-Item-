@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>system</category>
+        <format>png</format>
+        <height>54</height>
+        <image/>
+        <name>Arpprove_P.png</name>
+        <size_bytes>1765</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha_local</sys_created_by>
+        <sys_created_on>2017-10-04 12:36:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>33a0a862db2d4700e93fb96c4e96195f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Arpprove_P.png</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>db_image_33a0a862db2d4700e93fb96c4e96195f</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha_local</sys_updated_by>
+        <sys_updated_on>2017-10-04 12:36:22</sys_updated_on>
+        <thumbnail/>
+        <width>159</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#d6ffff</average_image_color>
+        <chunk_size_bytes/>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <image_height>54</image_height>
+        <image_width>159</image_width>
+        <size_bytes>1765</size_bytes>
+        <size_compressed>1788</size_compressed>
+        <sys_created_by>v-kannadhasanamirtha_local</sys_created_by>
+        <sys_created_on>2017-10-04 12:36:22</sys_created_on>
+        <sys_id>22d0a462db2d4700e93fb96c4e9619ab</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>v-kannadhasanamirtha_local</sys_updated_by>
+        <sys_updated_on>2017-10-04 12:36:22</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>33a0a862db2d4700e93fb96c4e96195f</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="22d0a462db2d4700e93fb96c4e9619ab">22d0a462db2d4700e93fb96c4e9619ab</sys_attachment>
+        <sys_created_by>v-kannadhasanamirtha_local</sys_created_by>
+        <sys_created_on>2017-10-04 12:36:22</sys_created_on>
+        <sys_id>62d0a462db2d4700e93fb96c4e9619ab</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2372</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="22d0a462db2d4700e93fb96c4e9619ab">22d0a462db2d4700e93fb96c4e9619ab</sys_attachment>
+        <sys_created_by>v-kannadhasanamirtha_local</sys_created_by>
+        <sys_created_on>2017-10-04 12:36:22</sys_created_on>
+        <sys_id>e2d0a462db2d4700e93fb96c4e9619ab</sys_id>
+    </sys_attachment_doc>
+</record_update>

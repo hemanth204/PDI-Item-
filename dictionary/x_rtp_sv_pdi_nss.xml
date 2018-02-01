@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="New Shipper Item Setup" max_length="40" name="x_rtp_sv_pdi_nss" type="collection">
+        <element label="Approved/Rejected by" max_length="32" name="approver_name" reference="sys_user" type="reference"/>
+        <element label="Area" max_length="4000" name="area" reference="cmn_location" reference_qual="u_type=Area^EQ" reference_qual_condition="u_type=Area^EQ" type="glide_list"/>
+        <element choice="3" default="all_stores" label="How do you want to choose your stores?" max_length="40" name="choose_your_stores" type="choice">
+            <choice>
+                <element label="All Stores" sequence="0" value="all_stores"/>
+                <element label="Region" sequence="1" value="region"/>
+                <element label="Area" sequence="2" value="area"/>
+                <element label="Stores" sequence="3" value="stores"/>
+            </choice>
+        </element>
+        <element label="# of component items" max_length="40" name="component_items" type="integer"/>
+        <element choice="1" label="Daily delivery distribution center" max_length="40" name="daily_delivery_distribution_center" type="choice">
+            <choice>
+                <element label="1133-Daily Delivery DC - Georgia" sequence="0" value="dc_1133"/>
+                <element label="1136-Daily Delivery DC - Pampano" sequence="1" value="dc_1136"/>
+                <element label="1137-Daily Delivery DC - Lakeland" sequence="2" value="dc_1137"/>
+                <element label="1145-Daily Delivery DC - Louisiana" sequence="3" value="dc_1145"/>
+                <element label="1100-Daily Delivery DC - Dallas" sequence="4" value="dc_1100"/>
+            </choice>
+        </element>
+        <element label="Date to distribute" max_length="40" name="date_to_distribute" type="glide_date"/>
+        <element label="HP(TX)" max_length="40" name="hp_tx" type="string"/>
+        <element label="HP(TX)-HP701123" max_length="40" name="hp_tx_hp701123" type="boolean"/>
+        <element choice="3" default="no" label="Item Re-claimable" max_length="40" name="item_re_claimable" type="choice">
+            <choice>
+                <element label="No" sequence="0" value="no"/>
+                <element label="Yes" sequence="1" value="yes"/>
+            </choice>
+        </element>
+        <element choice="3" default="no" label="Item Re-orderable" max_length="40" name="item_re_orderable" type="choice">
+            <choice>
+                <element label="No" sequence="0" value="no"/>
+                <element label="Yes" sequence="1" value="yes"/>
+            </choice>
+        </element>
+        <element label="ME(FL)" max_length="40" name="me_fl" type="string"/>
+        <element label="ME(FL)" max_length="40" name="me_fl_me701226" type="boolean"/>
+        <element label="New product brand" max_length="100" name="new_product_brand" type="string"/>
+        <element label="New product manufacturer" max_length="100" name="new_product_manufacturer" type="string"/>
+        <element hint="Test cat" label="PDI category" max_length="32" name="pdi_category" reference="x_rtp_sv_pdi_category" reference_qual="active=true^category_nameISNOTEMPTY^EQ" reference_qual_condition="active=true^category_nameISNOTEMPTY^EQ" type="reference"/>
+        <element label="PDI group" max_length="32" name="pdi_group" reference="x_rtp_sv_pdi_group" reference_qual="javascript:new u_popPDIGroup().u_popPDIGroup()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="PDI subgroup" max_length="32" name="pdi_subgroup" reference="x_rtp_sv_pdi_sub_group" reference_qual="javascript:new u_popPDIsubGroup().u_popPDIsubGroup()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Product brand" max_length="32" name="product_brand" reference="x_rtp_sv_pdi_product_band" reference_qual="javascript:new u_PDI_Grp_SubGrp_Size_Brand_Manufacturer().u_popPDIBrandShipper()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Product description" max_length="48" name="product_description" type="string"/>
+        <element label="Product manufacturer" max_length="32" name="product_manufacturer" reference="x_rtp_sv_pdi_product_manufacturer" reference_qual="javascript:new u_PDI_Grp_SubGrp_Size_Brand_Manufacturer().u_popPDIManufacturer()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Purchase package (PPK)" max_length="40" name="purchase_package_ppk" type="string"/>
+        <element label="Qty to distribute" max_length="40" name="qty_to_distribute" type="string"/>
+        <element attributes="format=none" label="Rebate Contract #" max_length="40" name="rebate_contract" type="integer"/>
+        <element label="Region" max_length="4000" name="region" reference="cmn_location" reference_qual="u_type=Region^EQ" reference_qual_condition="u_type=Region^EQ" type="glide_list"/>
+        <element label="SE(GA)" max_length="40" name="se_ga" type="string"/>
+        <element label="SE(GA)" max_length="40" name="se_ga_se701008_incl_rt675" type="boolean"/>
+        <element label="Shipper UPC" max_length="40" name="shipper_upc" type="string"/>
+        <element label="SO(185)" max_length="40" name="so_185" type="string"/>
+        <element label="SO(LA)" max_length="40" name="so_la" type="string"/>
+        <element label="SO(LA)-SO701048" max_length="40" name="so_la_so701048" type="boolean"/>
+        <element choice="1" default="2" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element label="Work in progress" sequence="0" value="2"/>
+                <element label="Waiting for approval" sequence="1" value="3"/>
+                <element label="Completed" sequence="2" value="9"/>
+                <element label="Rejected" sequence="3" value="8"/>
+            </choice>
+        </element>
+        <element label="Stores" max_length="4000" name="stores" reference="cmn_location" reference_qual="u_type=Store^EQ" reference_qual_condition="u_type=Store^EQ" type="glide_list"/>
+        <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Submitter name" max_length="32" name="submitter_name" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="SW(TX)" max_length="40" name="sw_tx" type="string"/>
+        <element label="SW(TX)-SW701122" max_length="40" name="sw_tx_sw701122" type="boolean"/>
+        <element label="Total Shipper Quantity" max_length="40" name="total_shipper_quantity" type="integer"/>
+        <element label="UPC code" max_length="40" name="upc_code" type="string"/>
+        <element label="Vendor ID" max_length="100" name="vendor_item_number" read_only="true" type="string"/>
+        <element label="Vendor item number (VIN)" max_length="40" name="vendor_item_number_vin" type="string"/>
+        <element label="Vendor name" max_length="32" name="vendor_name" reference="x_rtp_sv_pdi_vendor" reference_qual="javascript:new u_PDI_Grp_SubGrp_Size_Brand_Manufacturer().u_popVendor()" type="reference" use_reference_qualifier="advanced"/>
+    </element>
+</database>

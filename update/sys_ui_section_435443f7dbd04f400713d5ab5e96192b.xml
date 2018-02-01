@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="McLane" section_id="435443f7dbd04f400713d5ab5e96192b" sys_domain="global" table="x_rtp_sv_pdi_nis" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>true</is_plain_text>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>fef72db1db564380e93fb96c4e9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <text>&lt;b&gt;Forecast(PSPW):&lt;/b&gt;</text>
+            <type display_value="Line Separator">a93fc8e00f530000b12e6903cfe012e6</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>force_out_mclane</element>
+            <position>0</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>b2f72db1db564380e93fb96c4e9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_to_distribute_mclane</element>
+            <position>1</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>36f72db1db564380e93fb96c4e9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>b6f72db1db564380e93fb96c4e9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>3af72db1db564380e93fb96c4e9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>12M.x_rtp_sv_pdi_nis.x_rtp_sv_pdi_mclane_table.nis_number</element>
+            <position>4</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>baf72db1db564380e93fb96c4e9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fef72db1db564380e93fb96c4e9619dd</element>
+            <position>5</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>3ef72db1db564380e93fb96c4e9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>6</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>bef72db1db564380e93fb96c4e9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>me_fl_me701226</element>
+            <position>7</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>32f72db1db564380e93fb96c4e9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>se_ga_se701008</element>
+            <position>8</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>b2f72db1db564380e93fb96c4e9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>so_la_so701048</element>
+            <position>9</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>36f72db1db564380e93fb96c4e9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>so_185</element>
+            <position>10</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>b6f72db1db564380e93fb96c4e9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sw_tx_sw701122</element>
+            <position>11</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>3af72db1db564380e93fb96c4e9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hp_tx_hp701123</element>
+            <position>12</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>baf72db1db564380e93fb96c4e9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>13</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>3ef72db1db564380e93fb96c4e9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>14</position>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-11-08 16:38:47</sys_created_on>
+            <sys_id>bef72db1db564380e93fb96c4e9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="McLane" display_value="McLane" name="x_rtp_sv_pdi_nis" sys_domain="global" view="Default view">435443f7dbd04f400713d5ab5e96192b</sys_ui_section>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-11-08 16:38:47</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>McLane</caption>
+            <header>false</header>
+            <name>x_rtp_sv_pdi_nis</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-08-07 18:24:41</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>435443f7dbd04f400713d5ab5e96192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>McLane</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_ui_section_435443f7dbd04f400713d5ab5e96192b</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-08-07 18:24:41</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

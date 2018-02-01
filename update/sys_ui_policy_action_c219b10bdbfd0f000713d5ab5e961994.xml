@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>gallon_final_resolution</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-10-18 18:34:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c219b10bdbfd0f000713d5ab5e961994</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>gallon_final_resolution</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_ui_policy_action_c219b10bdbfd0f000713d5ab5e961994</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-10-20 17:43:34</sys_updated_on>
+        <table>x_rtp_sv_pdi_aid_subtask</table>
+        <ui_policy display_value="AID ST - Gallon Resolution">c619b10bdbfd0f000713d5ab5e961991</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

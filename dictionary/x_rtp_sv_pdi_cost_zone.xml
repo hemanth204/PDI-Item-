@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Cost Zone" max_length="40" name="x_rtp_sv_pdi_cost_zone" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Cost Zone Id" max_length="40" name="cost_zone_id" type="string"/>
+        <element display="true" label="Cost Zone Name" max_length="100" name="cost_zone_name" type="string"/>
+        <element label="Vendor Id" max_length="32" name="vendor_id" reference="x_rtp_sv_pdi_vendor" type="reference"/>
+        <index name="index">
+            <element name="vendor_id"/>
+        </index>
+    </element>
+</database>

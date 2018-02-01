@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>TH-test</name>
+        <run_once>true</run_once>
+        <script><![CDATA[var failedimports = [];
+var devices = getD42Details('Device 42 Devices', 'Devices', 'device_id');
+var oses = getD42Details('Device 42 OSes', 'operatingsystems', 'id');
+var ips = getD42Details('Device 42 IP Addresses', 'ips', 'id');
+
+if (failedimports.length == 0) {
+	var osmap = getOSMap(oses);
+	processAllDevices(devices, osmap);
+	processIPData(ips);
+	inactivateDeleteDevices(devices);
+}
+else {
+	gs.error("Device 42 import contained errors");
+	var user = gs.getUserID();
+	var incident = new GlideRecord('incident');
+	incident.initialize();
+	incident.caller_id = user;
+	incident.category = 'Service Now';
+	incident.subcategory = 'ServiceNow';
+	incident.assignment_group = 'c253e62ddb8a72044f2bb96c4e9619fd';
+	incident.short_description = 'Device 42 Import Failure';
+	incident.description = 'The following REST calls failed to execute as part of the nightly Device42 import:\n';
+	for (var i = 0; i < failedimports.length; i++) {
+		incident.description += failedimports[i] + '\n';
+	}
+	incident.insert();
+}
+
+
+// **************************************************************************************
+// The following function will inactivate any CIs that are no longer in the Device42
+// input, only if the device originally came from Device42
+// **************************************************************************************
+
+function inactivateDeleteDevices(devices) {
+	var gr = new GlideRecord('cmdb_ci_computer');
+	gr.addQuery('u_device42_id', '!=', '');
+	gr.addQuery('u_active', true);
+	gr.query();
+	while (gr.next()) {
+		if (!(gr.u_device42_id.toString() in devices)) {
+			gr.u_active = false;
+			gr.update();
+		}
+	}
+}
+
+
+// **************************************************************************************
+// The following functions are used to fill the network adapters
+// **************************************************************************************
+
+function processIPData(ipmap) {
+	var imprec = new GlideRecord('sys_import_set');
+	imprec.initialize();
+	imprec.mode = 'asynchronous';
+	imprec.table_name = 'u_device_42_network_adapter_import';
+	imprec.state = 'loading';
+	var isysid = imprec.insert();
+	for (var ipid in ipmap) {
+		var ipobj = ipmap[ipid];
+		addIPRec(ipobj,isysid);
+	}
+	imprec.state = 'loaded';
+	imprec.update();
+	var mapgr = getMap('u_device_42_network_adapter_import');
+	if (mapgr.next()) {
+		var t = new GlideImportSetTransformerWorker(imprec.sys_id, mapgr.sys_id);
+		t.setProgressName("Transforming: " + imprec.number + " using map " + mapgr.name);
+		t.setBackground(true);
+		t.start();
+	}
+}
+
+function addIPRec(iprecord, importid) {
+	var gr = new GlideRecord('u_device_42_network_adapter_import');
+	gr.initialize();
+	if (iprecord.device_id && iprecord.device_id != '') gr.u_device_id = iprecord.device_id;
+	if (iprecord.ip && iprecord.ip != '') gr.u_ip = iprecord.ip;
+	if (iprecord.mac_address && iprecord.mac_address != '') gr.u_mac_address = iprecord.mac_address;
+	gr.u_id = iprecord.id;
+	gr.sys_import_set = importid;
+	gr.insert();
+}
+
+// **************************************************************************************
+// The following functions are used to fill the current set of device tables 
+// **************************************************************************************
+
+function processAllDevices(devices, osmap) {
+	var tableConversion = { 'cmdb_ci_linux_server':'u_device_42_linux_device_import',
+							'cmdb_ci_unix_server':'u_device_42_unix_device_import',
+							'cmdb_ci_win_server':'u_device_42_windows_device_import',
+							'cmdb_ci_netgear':'u_device_42_network_device_import',
+							'cmdb_ci_esx_server':'u_device_42_esx_device_import',
+							'cmdb_ci_server':'u_device_42_device_import'
+						  };
+	// Create a set of import sets; one for each import set table type
+	var importsets = {};
+	for (var otable in tableConversion) {
+		var itable = tableConversion[otable];
+		var imprec = new GlideRecord('sys_import_set');
+		imprec.initialize();
+		imprec.mode = 'asynchronous';
+		imprec.table_name = itable;
+		imprec.state = 'loading';
+		var isysid = imprec.insert();
+		importsets[itable] = isysid;
+	}
+	
+	// Now do the real import set updates
+	for (var id in devices) {
+		var device = devices[id];
+		var os = typeof device.os == 'undefined' ? '' : device.os;
+		if (os == '' || os in osmap) {
+			var thistable = osmap[os];
+			if (os == '')
+				thistable = 'cmdb_ci_server';
+			var importtable = tableConversion[thistable];
+			var importsysid = importsets[importtable];
+			addDevice(device, importtable, importsysid);
+		}
+	}
+	// Now close out the import sets so the transform maps can run
+	
+	for (var imptable in importsets) {
+		var impid = importsets[imptable];
+		var igr = new GlideRecord('sys_import_set');
+		if (igr.get(impid)) {
+			igr.state = 'loaded';
+			igr.update();
+			var mapgr = getMap(igr.table_name);
+			if (mapgr.next()) {
+				var t = new GlideImportSetTransformerWorker(igr.sys_id, mapgr.sys_id);
+				t.setProgressName("Transforming: " + igr.number + " using map " + mapgr.name);
+				t.setBackground(true);
+				t.start();
+			}
+		}
+	}
+}
+
+function addDevice(device, table, importsysid) {
+	var gr = new GlideRecord(table);
+	gr.initialize();
+	gr.u_name = getNormalizedValue(device.name);
+	gr.u_serial_no = getNormalizedValue(device.serial_no);
+	gr.u_service_level = getNormalizedValue(device.service_level);
+	gr.u_mac_addresses__mac = getNormalizedValue(device.mac_addresses[0]);
+	gr.u_cpucount = getNormalizedValue(device.cpucount);
+	gr.u_cpucore = getNormalizedValue(device.cpucore);
+	gr.u_cpuspeed = getNormalizedValue(device.cpuspeed);
+	gr.u_ram = getNormalizedValue(device.ram);
+	gr.u_hddsize = getNormalizedValue(device.hddsize);
+	gr.u_os = getNormalizedValue(device.os);
+	gr.u_osver = getNormalizedValue(device.osver);
+	gr.u_notes = getNormalizedValue(device.notes);
+	gr.u_manufacturer = getNormalizedValue(device.manufacturer);
+	gr.u_hw_model = getNormalizedValue(device.hw_model);
+	gr.u_in_service = getNormalizedValue(device.in_service);
+	gr.u_last_updated = getNormalizedValue(device.last_updated);
+	gr.u_hardware_type = getNormalizedValue(device.type);
+	gr.u_device_id = device.device_id;
+	gr.sys_import_set = importsysid;
+	gr.insert();
+}
+
+function getNormalizedValue(entry) {
+	if (!entry || entry.toString() == '' || entry.toString() == 'null') return '';
+	else return entry.toString();
+}
+
+
+// **************************************************************************************
+// The following function returns the transform map record for the given table 
+// **************************************************************************************
+
+function getMap(importtable) {
+	var gr = new GlideRecord('sys_transform_map');
+	gr.addQuery('source_table', importtable);
+	gr.addActiveQuery();
+	gr.query();
+	return gr;
+}
+
+
+// **************************************************************************************
+// The following function determines which server table to use, based on the OS
+// **************************************************************************************
+
+function getOSMap(oldosmap) {
+	var map = {};
+	for (var id in oldosmap) {
+		var os = oldosmap[id].name.toString();
+		var ostable = '';
+		var loweros = os.toLowerCase();
+		if (loweros.indexOf('linux') >= 0 || loweros.indexOf('freebsd') >= 0)
+			ostable = 'cmdb_ci_linux_server';
+		else if (loweros.indexOf('centos') >= 0 || loweros.indexOf('solaris') >= 0)
+			ostable = 'cmdb_ci_unix_server';
+		else if (loweros.indexOf('microsoft') >= 0)
+			ostable = 'cmdb_ci_win_server';
+		else if (loweros.indexOf('ios') == 0 || loweros.indexOf('fos') == 0 || loweros.indexOf('brocade') == 0)
+			ostable = 'cmdb_ci_netgear';
+		else if (loweros.indexOf('esx') >= 0)
+			ostable = 'cmdb_ci_esx_server';
+		else
+			ostable = 'cmdb_ci_server';
+		map[os] = ostable;
+	}
+	return map;
+}
+
+// **************************************************************************************
+// The following function is used to extract the data from Device 42
+// **************************************************************************************
+
+
+function getD42Details(restname, mainkey, indexkey) {
+	var restlist = {};
+	var limit = 1000;
+	var offset = 0;
+	while (true) {
+		try {
+			var request = new sn_ws.RESTMessageV2(restname, 'Default GET');
+			request.setStringParameterNoEscape('offset', offset.toString());
+			request.setStringParameterNoEscape('limit', limit.toString());
+			var response = request.execute();
+			var responseBody = response.getBody();
+			var httpStatus = response.getStatusCode();
+			if (httpStatus == 200) {
+				var obj = new JSON().decode(responseBody);
+				var mainlist = obj[mainkey];
+				for (var i = 0; i < mainlist.length; i++) {
+					var thisobj = mainlist[i];
+					var thisid = thisobj[indexkey];
+					restlist[thisid] = thisobj;
+				}
+				var total_count = parseInt(obj.total_count);
+				var tester = limit + offset;
+				if (tester >= total_count) {
+					break;
+				}
+				offset += limit;
+			}
+			else {
+				gs.error("Received error " + httpStatus + " executing the '" + restname + "' REST method");
+				failedimports.push(restname);
+				break;
+			}
+		}
+		catch(ex) {
+			gs.error("Error invoking REST message '" + restname + "': " + ex.getMessage());
+			failedimports.push(restname);
+			break;
+		}
+	}
+	return restlist;
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+        <sys_created_on>2017-12-01 16:31:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>79220019db364300e93fb96c4e961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TH-test</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_fix_79220019db364300e93fb96c4e961952</sys_update_name>
+        <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+        <sys_updated_on>2017-12-01 16:31:36</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Daily Delivery Table" max_length="40" name="x_rtp_sv_pdi_daily_delivery_table" type="collection">
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Area" max_length="1024" name="area" reference="cmn_location" reference_qual="u_type=Area^EQ" reference_qual_condition="u_type=Area^EQ" type="glide_list"/>
+        <element label="NIS Number" max_length="32" name="nis_number" read_only="true" reference="x_rtp_sv_pdi_nis" type="reference"/>
+        <element display="true" label="Qty to distribute(per store)" max_length="40" name="qty_to_distribute" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Region" max_length="1024" name="region" reference="cmn_location" reference_qual="u_type=Region^EQ" reference_qual_condition="u_type=Region^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="RT DC" max_length="40" name="rt_dc" type="choice">
+            <choice>
+                <element label="1100-Dallas" value="10"/>
+                <element label="1133-Georgia" value="20"/>
+                <element label="1137-Lakeland" value="30"/>
+                <element label="1145-Louisiana" value="40"/>
+            </choice>
+        </element>
+        <element choice="1" label="Site Traits" max_length="40" name="site_traits" type="choice">
+            <choice/>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Stores" max_length="1024" name="stores" reference="cmn_location" reference_qual="u_type=Store^EQ" reference_qual_condition="u_type=Store^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="all_stores" label="Store Selection" max_length="40" name="store_selection" type="string">
+            <choice>
+                <element label="All Stores" sequence="0" value="all_stores"/>
+                <element label="Area" sequence="1" value="area"/>
+                <element label="Region" sequence="2" value="region"/>
+                <element label="Stores" sequence="3" value="stores"/>
+                <element label="Site Traits" sequence="4" value="site traits"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="nis_number"/>
+        </index>
+    </element>
+</database>

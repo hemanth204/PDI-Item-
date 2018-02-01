@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_rtp_sv_pdi_cost_zone" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cost_zone_name</element>
+            <list_id display_value="x_rtp_sv_pdi_cost_zone" element="NULL" name="x_rtp_sv_pdi_cost_zone" parent="NULL" relationship="NULL" sys_domain="global" view="3976271090300300a21c513b6aad7680">abdc02c4db954700e93fb96c4e96193d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 15:47:47</sys_created_on>
+            <sys_id>23dc02c4db954700e93fb96c4e96193e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 15:47:47</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_rtp_sv_pdi_cost_zone</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+            <sys_created_on>2017-09-14 15:47:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>abdc02c4db954700e93fb96c4e96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rtp_sv_pdi_cost_zone</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_ui_list_x_rtp_sv_pdi_cost_zone_sys_ref_list</sys_update_name>
+            <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+            <sys_updated_on>2017-09-14 15:47:47</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">3976271090300300a21c513b6aad7680</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

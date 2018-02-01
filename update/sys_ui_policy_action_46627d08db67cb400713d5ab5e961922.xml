@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>invanalyst_comments</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+        <sys_created_on>2018-01-04 10:13:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>46627d08db67cb400713d5ab5e961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>invanalyst_comments</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_ui_policy_action_46627d08db67cb400713d5ab5e961922</sys_update_name>
+        <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+        <sys_updated_on>2018-01-04 10:13:42</sys_updated_on>
+        <table>x_rtp_sv_pdi_aid_subtask</table>
+        <ui_policy display_value="AID INV analyst stage readonly">c1ceab14db0b0b00e93fb96c4e96191a</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

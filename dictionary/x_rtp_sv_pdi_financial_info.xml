@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Financial Information" max_length="40" name="x_rtp_sv_pdi_financial_info" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Cost zone" max_length="32" name="cost_zone" reference="x_rtp_sv_pdi_cost_zone" reference_qual="cost_zone_nameISNOTEMPTY^EQ" reference_qual_condition="cost_zone_nameISNOTEMPTY^EQ" type="reference"/>
+        <element label="Invoice Cost to Wholesaler/RT" max_length="20" name="invoice_cost_to_wholesaler_rt" type="currency"/>
+        <element label="NIS Number" max_length="32" name="nis_number" read_only="true" reference="x_rtp_sv_pdi_nis" type="reference"/>
+        <element label="NSS Number" max_length="32" name="nss_number" read_only="true" reference="x_rtp_sv_pdi_nss" type="reference"/>
+        <element choice="3" default="price_rule" label="Price Rule or Retail" max_length="40" name="price_rule_or_retail" type="choice">
+            <choice>
+                <element label="Price Rule" value="price_rule"/>
+                <element label="Retail" value="retail"/>
+            </choice>
+        </element>
+        <element label="Rebate Contract Number" max_length="40" name="rebate_contract_number" type="string"/>
+        <element label="Retail price" max_length="40" name="retail_price" type="currency"/>
+        <element label="Store" max_length="4000" name="store" reference="cmn_location" type="glide_list"/>
+        <element label="Wholesaler Mark-up" max_length="30" name="wholesaler_mark_up" type="currency"/>
+        <index name="index">
+            <element name="nis_number"/>
+        </index>
+        <index name="index2">
+            <element name="cost_zone"/>
+        </index>
+        <index name="index3">
+            <element name="nss_number"/>
+        </index>
+    </element>
+</database>

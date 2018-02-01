@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>PDI_NIS_Notify_Approver_BKP1</name>
+        <new_lines_to_html>true</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+ template.print("<html><body style='font-family:calibri'>");
+template.print( '<table style="width: 100%; cellspacing="0"; background-color: #ffffff"><tbody>');
+
+template.print('<tr><td><img style="align: left;" title="" src="eam_logoPrimary_RaceTrac.png" alt="RaceTrac Official Logo" width="240" height="60" align="left" border="" hspace="" vspace="" /></td> ');
+template.print('<td style="color: #022169; text-align: right; font-family: calibri; font-size: 30pt;">ServiceNow</td> </tr> </tbody> </table><br><br>');
+
+template.print('<div style ="background-color: #e6e7e8">');
+	//Hello Message
+	var item1 = new GlideRecord("x_rtp_sv_pdi_nis");
+	item1.addQuery("sys_id", current.sys_id);
+	item1.query();
+	
+	while(item1.next()) {
+		name = item1.submitter_name.getDisplayValue();
+		dname = name.split(" ");
+		
+		
+		template.print("<br><br><table align='center'; background-color: #e6e7e8; table-layout:fixed; cellpadding='8' style='color:#535353;font-size:18px'>");
+		template.print("<div style='font-family:Arial, Helvetica, sans-serif;font-size:18px;text-align: left'> Hello  " +  "<b>" + dname[0] + "</b>" + "," + "<br><br>");
+template.print("Item Number" + "&nbsp;" + "<b>" + item1.number.getDisplayValue() + "</b>" + "&nbsp;" + "was submitted for your Approval" + "</div><br><br><br>");		
+		// BEGIN TABLE FOR ITERATED LABELS AND VALUES
+		
+// template.print('<table style="background-color: #e6e7e8; width: 90%; margin: auto;font-family: calibri">');	
+// 		template.print("<br><span style='font-family: calibri; font-size:18px;text-align: left'> Hello  " +  "<b>" + dname[0] + "</b>" + "," + "</span><br><br><br>");
+		
+// template.print("<span style='font-family: calibri;font-size:18px;text-align: left'> Item Number" + "&nbsp" + "<b>" + item1.number.getDisplayValue() + "</b>" + "&nbsp" + "was submitted for your Approval </span><br><br><br> ");
+//template.print("<span><br><br><br>");
+		// BEGIN TABLE FOR ITERATED LABELS AND VALUES
+				 
+	template.print("<tr><td style='font-family: calibri;text-align:right;padding-right:20px';padding-bottom: 10px>" + item1.number.getLabel() + "</td><td style='font-family: calibri;text-align:left'>" + item1.number.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family: calibri;text-align:right;padding-right:20px;padding-bottom: 10px'>" + item1.product_description.getLabel() + "</td><td style='font-family: calibri; text-align:left'>" + item1.product_description.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family: calibri;text-align:right;padding-right:20px;padding-bottom: 10px'>" + item1.submitter_name.getLabel() + "</td><td style='font-family: calibri; text-align:left'>" + item1.submitter_name.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family: calibri;text-align:right;padding-right:20px; padding-bottom: 10px'>" + item1.pdi_category.getLabel() + "</td><td style='font-family: calibri; text-align:left'>" + item1.pdi_category.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family: calibri;text-align:right;padding-right:20px;padding-bottom: 10px'>" + item1.pdi_group.getLabel() + "</td><td style='font-family: calibri; text-align:left'>" + item1.pdi_group.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family: calibrif;text-align:right;padding-right:20px'>" + item1.pdi_subgroup.getLabel() + "</td><td style='font-family: calibri; text-align:left'>" + item1.pdi_subgroup.getDisplayValue() + "</td></tr>");
+		template.print("</div></table><br><br>");
+		 
+		//BEGIN Approve and Reject anchor tags using VML to support varied email clients
+	
+	var Otab = '<table width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td>';
+	var Itab = '<table align="center" border="0" cellspacing="20" cellpadding="0"><tr>'	;
+	var acc ='<td align="center"" style="-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;" bgcolor="#00a94f">';
+	var rej ='<td align="center" style="-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;" bgcolor="#ea1f27">';
+	var ctabs = '</tr> </table> </td>   </tr> </table>'	;
+	var lnk1 = '<a href="' + item1.getLink() + '"' + 'target="_blank" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding: 12px 40px;  display: inline-block;">';
+
+		template.print(Otab + Itab);
+		template.print(acc +lnk1 + "Approve</a>" );
+		template.print(rej +lnk1 + "Reject </a>" );
+		template.print(ctabs);
+
+		//END Reject like format and hyperlink
+		template.print("</div></body></html>");
+	}
+var dt = new Date();
+dyear = dt.getFullYear();
+template.print('<br><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"><tr><td>');       
+template.print('<table  width="auto" align="center" border="0" cellspacing="0" cellpadding="0"> <tr>'); 
+template.print("<td style='text-align:right;padding-right:10px;font-size: 14px;color: #022169'>");
+template.print('RaceTrac ' +dyear + ' © ' + ' | ' + 'Ref:MSG0089563' + ' | ' + '</td>');
+template.print("<td style='text-align:left'>"); 
+	
+template.print('<a href="https://racetrac.service-now.com/sp" target="_blank" style="font-size: 14px; font-family: calibri; color: #022169; text-decoration: none; ">ServiceNow</a> </td><tr>'); 		
+	
+template.print('<table width="auto" align="center"  border="0" cellspacing="2" cellpadding="0" padding-top:3px >'); 			
+template.print('<tr><td style="font-family: calibri;text-align:right;padding-top: 3px">');
+template.print('<style="text-align:center"> <a href="https://racetrac.service-now.com/sp?id=sc_cat_item&sys_id=d10ea205db76f6000713d5ab5e961969" target="_blank" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: #022169; text-decoration: none; ">Give us your feedback!</a>	');
+template.print('</td> </table> </tr> </table> </td> </tr> </table>');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>v-ArjitArora</sys_created_by>
+        <sys_created_on>2017-09-24 13:39:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>932f0153db990f00e93fb96c4e9619d5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>PDI_NIS_Notify_Approver_BKP1</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_email_932f0153db990f00e93fb96c4e9619d5</sys_update_name>
+        <sys_updated_by>v-ArjitArora</sys_updated_by>
+        <sys_updated_on>2017-09-24 14:45:40</sys_updated_on>
+    </sys_script_email>
+</record_update>

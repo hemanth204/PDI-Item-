@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>stores</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-08-08 20:47:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>637ea4d4dba08f400713d5ab5e96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>stores</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_ui_policy_action_637ea4d4dba08f400713d5ab5e96194e</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-08-08 20:47:06</sys_updated_on>
+        <table>x_rtp_sv_pdi_nis</table>
+        <ui_policy display_value="PDI NIS - Store Selection">2189a8d0dba08f400713d5ab5e9619a6</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>

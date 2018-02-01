@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Package Information" max_length="40" name="x_rtp_sv_pdi_package_information" type="collection">
+        <element attributes="scale=2" label="Depth(Inch)" max_length="40" name="depth_inches" type="float"/>
+        <element attributes="scale=2" label="Height(Inch)" max_length="40" name="height_inches" type="float"/>
+        <element label="NIS Number" max_length="32" name="nis_number" read_only="true" reference="x_rtp_sv_pdi_nis" type="reference"/>
+        <element display="true" label="Package" max_length="32" name="package1" reference="x_rtp_sv_pdi_package1" type="reference"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="string">
+            <choice>
+                <element label="Purchase" sequence="0" value="Purchase"/>
+                <element label="Sales" sequence="1" value="Sales"/>
+                <element label="Both" sequence="2" value="Both"/>
+            </choice>
+        </element>
+        <element label="UPC" max_length="40" name="upc" type="string"/>
+        <element attributes="scale=2" label="Width(Inch)" max_length="40" name="width_inches" type="float"/>
+        <index name="index">
+            <element name="nis_number"/>
+        </index>
+        <index name="index2">
+            <element name="package1"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="PDI Components Import" max_length="40" name="x_rtp_sv_pdi_pdi_components_import" type="collection">
+        <element label="Component Item Description" max_length="40" name="component_item_description" type="string"/>
+        <element label="Component Item Number" max_length="40" name="component_item_number" type="string"/>
+    </element>
+</database>

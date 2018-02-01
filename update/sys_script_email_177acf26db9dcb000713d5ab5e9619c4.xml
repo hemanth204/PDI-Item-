@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>PDI_NIS_Notify_Approver_2</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+template.print("<html><body style='font-family:Arial, Helvetica, sans-serif;'>");
+	
+
+	//Hello Message
+	var item1 = new GlideRecord("x_rtp_sv_pdi_nis");
+	item1.addQuery("sys_id", current.sys_id);
+	item1.query();
+	
+	while(item1.next()) {
+		name = item1.submitter_name.getDisplayValue();
+		dname = name.split(" ");
+		
+		template.print("<br><br><table align='center';  table-layout:fixed; cellpadding='8' style='color:#535353;font-size:18px'>");
+		template.print("<div style='font-family:Arial, Helvetica, sans-serif;font-size:18px;text-align: left'> Hello  " +  "<b>" + dname[0] + "</b>" + "," + "<br><br>");
+template.print("Item Number" + "&nbsp;" + "<b>" + item1.number.getDisplayValue() + "</b>" + "&nbsp;" + "was submitted for your Approval" + "</div><br><br><br>");		
+
+		// BEGIN TABLE FOR ITERATED LABELS AND VALUES
+				 
+	template.print("<tr><td style='font-family:Arial, Helvetica, sans-serif;text-align:right;padding-right:20px';padding-bottom: 10px>" + item1.number.getLabel() + "</td><td style='font-family:Arial, Helvetica, sans-serif;text-align:left'>" + item1.number.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family:Arial, Helvetica, sans-serif;text-align:right;padding-right:20px;padding-bottom: 10px'>" + item1.product_description.getLabel() + "</td><td style='font-family:Arial, Helvetica, sans-serif; text-align:left'>" + item1.product_description.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family:Arial, Helvetica, sans-serif;text-align:right;padding-right:20px;padding-bottom: 10px'>" + item1.submitter_name.getLabel() + "</td><td style='font-family:Arial, Helvetica, sans-serif; text-align:left'>" + item1.submitter_name.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family:Arial, Helvetica, sans-serif;text-align:right;padding-right:20px;padding-bottom: 10px'>" + item1.pdi_category.getLabel() + "</td><td style='font-family:Arial, Helvetica, sans-serif; text-align:left'>" + item1.pdi_category.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family:Arial, Helvetica, sans-serif;text-align:right;padding-right:20px;padding-bottom: 10px'>" + item1.pdi_group.getLabel() + "</td><td style='font-family:Arial, Helvetica, sans-serif; text-align:left'>" + item1.pdi_group.getDisplayValue() + "</td></tr> ");
+		
+		template.print("<tr><td style='font-family:Arial, Helvetica, sans-serif;text-align:right;padding-right:20px'>" + item1.pdi_subgroup.getLabel() + "</td><td style='font-family:Arial, Helvetica, sans-serif; text-align:left'>" + item1.pdi_subgroup.getDisplayValue() + "</td></tr>");
+		template.print("</div></table><br><br>");
+		 
+		//BEGIN Approve and Reject anchor tags using VML to support varied email clients
+/*	
+	var Otab = '<table width="auto" border="0" cellspacing="0" cellpadding="0" align="center"> <tr><td>';
+	var Itab = '<table width="auto" align="center" border="0" cellspacing="20" cellpadding="0"><tr>'	;
+	var acc ='<td align="center"" style="-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;" bgcolor="#00a94f">';
+	var rej ='<td align="center" style="-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;" bgcolor="#ea1f27">';
+	var ctabs = '</tr> </table> </td>   </tr> </table>'	;
+	var lnk1 = '<a href="' + item1.getLink() + '"' + 'target="_blank" style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding: 6px 30px;  display: inline-block;">';
+
+		template.print(Otab + Itab);
+		template.print(acc +lnk1 + "Approve</a></td>" );
+		template.print(rej +lnk1 + "Reject </a></td>" );
+		template.print(ctabs);
+  */  
+	// test code with VML MSO code Oct 6 Begin
+		var tbl1 = '<table width="100%" border="0" cellspacing="10" cellpadding="0">';
+
+var trec1 = '<tr align="center"> <td align="right"> <div>';
+
+var msobacc = ' <!--[if (gte mso 9)|(IE)]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"  xmlns:w="urn:schemas-microsoft-com:office:word" href="' +
+item1.getLink()
++ '" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#00a94f" fillcolor="#00a94f">' +
+'<w:anchorlock/> <center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">Accept</center> </v:roundrect> <![endif]-->';
+
+var msobrej = ' <!--[if (gte mso 9)|(IE)]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"  xmlns:w="urn:schemas-microsoft-com:office:word" href="' +
+	item1.getLink() +
+	'" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#ea1f27" fillcolor="#ea1f27">' +
+'<w:anchorlock/> <center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">Reject</center> </v:roundrect> <![endif]-->';
+
+var lnkacc = '<a href="' + item1.getLink() + '"' + 'target="_blank" style="background-color:#00a94f;border:1px solid #00a94f;border-radius:3px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px; line-height:44px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">';
+
+var lnkrej = '<a href="' + item1.getLink() + '"' + 'target="_blank" style="background-color:#ea1f27;border:1px solid #ea1f27;border-radius:3px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px; line-height:44px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">';
+
+var cltrec1 =  '</div> </td> <td align="left"> <div>' ;
+
+var cltab1 = '</div> </td> </tr> </table> ';
+
+template.print(tbl1 + trec1 + msobacc);
+template.print(lnkacc + "Approve</a>" );
+template.print(cltrec1 + msobrej);
+template.print(lnkrej + "Reject </a>" );
+template.print(cltab1);
+		
+		// test code with VML MSO code Oct 6 - end
+		//END Reject like format and hyperlink VML
+		
+		// Begin BASIC ACCEPT REJECT -  comply with Outllok format
+		
+/*
+var pad2 ="&nbsp; &nbsp";
+var acspan = "<span style='font-size:30px;color:#ffffff;width:150px;height:40; display:inline-block; text-align:center;background-color:#00A94F;       '>";  
+var rjspan = "<span style='font-size:30px;color:#ffffff;width:150px;height:40; display:inline-block; text-align:center;background-color:#ea1f27;'>"; 
+var lnk1 = '<a href="' + item1.getLink() + '"' + 'target="_blank" style="font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; display: inline-block;">';
+		
+		
+template.print("<div style='text-align:center;font-size:30px;'>");
+template.print(acspan + lnk1 + "&nbsp;Approve&nbsp;</a></span>" +pad2);
+
+template.print(rjspan + lnk1 + "&nbsp;Reject&nbsp;</a></span></div>" );
+*/		
+		// END BASIC ACCEPT REJECT - raw code to comply with Outllok format
+		template.print("</body></html>");
+	}
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>v-ArjitArora</sys_created_by>
+        <sys_created_on>2017-09-22 14:42:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>177acf26db9dcb000713d5ab5e9619c4</sys_id>
+        <sys_mod_count>139</sys_mod_count>
+        <sys_name>PDI_NIS_Notify_Approver_2</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_email_177acf26db9dcb000713d5ab5e9619c4</sys_update_name>
+        <sys_updated_by>v-ArjitArora</sys_updated_by>
+        <sys_updated_on>2017-10-06 10:52:24</sys_updated_on>
+    </sys_script_email>
+</record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Retail Management">ff047982dbc88740e93fb96c4e96194d</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="task">sys_class_name=x_rtp_sv_pdi_nis^ORsys_class_name=x_rtp_sv_pdi_nss^EQ<item endquery="false" field="sys_class_name" goto="false" newquery="false" operator="=" or="false" value="x_rtp_sv_pdi_nis"/>
+            <item endquery="false" field="sys_class_name" goto="false" newquery="false" operator="=" or="true" value="x_rtp_sv_pdi_nss"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Completed</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>task</name>
+        <order>870</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_rtp_sv_pdi.user,x_rtp_sv_pdi.admin,x_rtp_sv_pdi.approver</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-08-15 19:10:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c8b50eadb2c8f00e93fb96c4e9619f6</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>All Items</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_app_module_5c8b50eadb2c8f00e93fb96c4e9619f6</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-12-13 18:45:53</sys_updated_on>
+        <timeline_page/>
+        <title>All Items</title>
+        <uncancelable>false</uncancelable>
+        <view_name>NISF</view_name>
+        <window_name/>
+    </sys_app_module>
+</record_update>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>AID_Completed task_Fuel_Notification</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+ 
+	 template.print("<html><body><center>");
+    
+	//Hello Message
+	var item1 = new GlideRecord("x_rtp_sv_pdi_aid");
+	item1.addQuery("sys_id", current.sys_id);
+	item1.query();
+	
+	while(item1.next()) {
+		name = item1.prepared_by.getDisplayValue();
+		approverName = item1.assignment_group.getDisplayValue();
+		dname = name.split(" ");
+		aname = approverName.split(" ");
+		var lnk1 = '<a href="' + item1.getLink() + '"' + 'style="font-weight:normal;text-decoration:none;color:#ffffff">';
+		//template.print("<br/>");
+template.print("<table style='font-family:verdana;border:none;font-size:20px;font-weight:500;padding-left:15px;width:100%;'>");
+		template.print("<tr style='border:none;'>");
+		
+		template.print("<td style='color:#022169;font-size:16px;' colspan='2'>" + "<br/>"+ dname[0] + "," + "<br/>");
+        //template.print("Your invoice has been completed " + aname[0]);
+		template.print("Your invoice has been completed.");
+		// BEGIN TABLE FOR ITERATED LABELS AND VALUES
+		template.print("<br/><br/>");
+		template.print("<table style='color:#676767;width:100%;' cellpadding='0' cellspacing='4'>");
+		//Label
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;'>"+ item1.number.getLabel() + "</td><td style='width:70%;font-size:13px;font-family:verdana;word-break:break-all;'>" + item1.number.getDisplayValue() + "</td>");
+		template.print("</tr>");
+		
+		//Invoice type
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;padding-top:-15px;'>"+ item1.invoice_type.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.invoice_type.getDisplayValue() + "</td>");
+		template.print("</tr>");
+		
+// 		//Product Type
+// 		template.print("<tr>");
+// 		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;'>"+ item1.product_type.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.product_type.getDisplayValue() + "</td>");
+// 		template.print("</tr>");
+		
+		//Prepared by
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;'>"+ item1.prepared_by.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.prepared_by.getDisplayValue() + "</td>");
+		template.print("</tr>");
+		
+		
+		//Invoice Due date
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;'>"+ item1.invoice_due_date.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.invoice_due_date.getDisplayValue() + "</td>");
+		template.print("</tr>");
+	
+		
+		//Approval due date
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;'>"+ item1.approval_due_date.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.approval_due_date.getDisplayValue() + "</td>");
+template.print("</tr>");
+		
+		//Empty space beneath
+		template.print("<tr>");
+		template.print("<td><p>&nbsp;</p></td>");
+template.print("</tr>");
+		
+		
+template.print("</table>");
+
+template.print("</td>");
+template.print("</tr>");
+template.print("</table>");
+template.print("</center>");
+template.print("</body>");
+template.print("</html>");
+			
+        }
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+        <sys_created_on>2017-10-26 09:50:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>705d89e9db8e4740e93fb96c4e9619d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AID_Completed task_Fuel_Notification</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_email_705d89e9db8e4740e93fb96c4e9619d7</sys_update_name>
+        <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+        <sys_updated_on>2017-11-02 09:18:20</sys_updated_on>
+    </sys_script_email>
+</record_update>

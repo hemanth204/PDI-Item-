@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>pdi_location</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-12-11 16:24:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1521af90dbc70b00e93fb96c4e96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PDI Location</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_ui_view_1521af90dbc70b00e93fb96c4e96194b</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-12-11 16:24:21</sys_updated_on>
+        <title>PDI Location</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

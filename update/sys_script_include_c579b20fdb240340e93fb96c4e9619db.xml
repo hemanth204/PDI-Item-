@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_rtp_sv_pdi.u_popPPK</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Created for Loading PPK</description>
+        <name>u_popPPK</name>
+        <script><![CDATA[var u_popPPK = Class.create();
+u_popPPK.prototype = {
+	initialize: function() {
+	},
+	u_popPPK:function() {
+		
+		var gp = ' ';
+		var a = current.nis_number.sys_id;
+		//var a = current.number.sys_id;
+		if(!a)
+			return ;
+		
+		var grp = new GlideRecord('x_rtp_sv_pdi_pack_size_purchase');
+		grp.addQuery('nis_number', a);
+		grp.query();
+		//gs.addInfoMessage("COMPANY::::"+a);
+		while(grp.next()) {
+        if (gp.length > 0) {
+				gp += (',' + grp.sys_id);
+			    //gs.addInfoMessage("PPK Name::::"+gp);
+				}
+			else {
+				// gp += (',' + grp.ppk_of_units);
+				//gp = grp.ppk_of_units;
+				return;
+			}
+		}
+		return 'sys_idIN' +gp;
+		},
+	type: 'u_popPPK'
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-08-17 19:57:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c579b20fdb240340e93fb96c4e9619db</sys_id>
+        <sys_mod_count>49</sys_mod_count>
+        <sys_name>u_popPPK</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_include_c579b20fdb240340e93fb96c4e9619db</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-09-06 20:08:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

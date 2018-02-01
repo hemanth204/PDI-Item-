@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <enforce_mandatory_fields>Only Mapped Fields</enforce_mandatory_fields>
+        <name>PDI Manufacturers Import</name>
+        <order>170</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_rtp_sv_pdi_pdi_manufacturers_brand_import</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+        <sys_created_on>2018-01-17 11:49:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>90e4c154dbfb83000713d5ab5e961973</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>PDI Manufacturers Import</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_transform_map_90e4c154dbfb83000713d5ab5e961973</sys_update_name>
+        <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+        <sys_updated_on>2018-01-23 09:45:04</sys_updated_on>
+        <target_table>x_rtp_sv_pdi_product_manufacturer</target_table>
+    </sys_transform_map>
+</record_update>

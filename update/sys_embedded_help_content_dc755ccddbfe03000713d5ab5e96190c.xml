@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>assessment</category>
+        <content><![CDATA[<div>
+ <h1 class="title topictitle1">Assessment Group form</h1>
+ <div class="body conbody">
+  <div class="section role-admin"> 
+   <p class="p"><span class="ph">An assessment group is a container for assessment instances and assessment results generated in a single occurrence.</span></p> 
+   <p class="p">The system generates an assessment group every time the scheduled job runs or the API is called, when there is at least one assessable record associated to a category in the type. You can find assessment group records in <span class="ph menucascade"><span class="ph uicontrol">Assessments</span> &gt; <span class="ph uicontrol">Assessments</span> &gt; <span class="ph uicontrol">Assessment Groups</span></span>.</p> 
+   <div class="p">
+    The Assessment Group form is read-only and displays the group 
+    <span class="ph uicontrol">Number</span>, the associated 
+    <span class="ph uicontrol">Metric type</span>, and these related lists:
+    <ul class="ul" id="asmt_assessment-normal__ul_g3x_d1t_2r"><li class="li"><span class="ph uicontrol">Assessment Instances</span>: Lists all assessment instances within this group. There may be no records in this related list. The system does not generate assessment instances if there are only scripted metrics for the type.</li><li class="li"><span class="ph uicontrol">Metric Results</span>: Lists all metric results for this group. There may be no records in this related list initially. The system generates metric results immediately for scripted metrics, but not for non-scripted metrics, which appear as questions on assessments and require user response. The system dynamically updates the records in this list as users complete assessment questionnaires.</li><li class="li"><span class="ph uicontrol">Assessment Category Results</span>: Lists all category results for this group. There may be no records in this related list initially. The system generates category results immediately if there are only scripted metrics in a category. Otherwise, the system does not calculate category results until a user completes an assessment questionnaire that contains questions from the category.</li></ul>
+   </div> 
+  </div>
+ </div>
+ <div class="related-links">
+  <div class="relinfo">
+   <div class="reltitle">
+    Related information
+    <br />
+    <div>
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:MetricResults&amp;version&#61;jakarta" target="_blank" rel="nofollow">View a metric result</a>
+    </div>
+    <div>
+     <a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:CategoryResults&amp;version&#61;jakarta" target="_blank" rel="nofollow">View a category result</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>]]></content>
+        <last_sync>2018-01-14 23:16:04</last_sync>
+        <modifier>normal</modifier>
+        <name>asmt_assessment-normal</name>
+        <page>asmt_assessment</page>
+        <product>1</product>
+        <qualifier/>
+        <role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</role>
+        <role_order>10</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2017-11-30 23:14:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc755ccddbfe03000713d5ab5e96190c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>asmt_assessment-normal</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_embedded_help_content_dc755ccddbfe03000713d5ab5e96190c</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-01-14 23:16:04</sys_updated_on>
+        <version>j</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=dc755ccddbfe03000713d5ab5e96190c"/>
+</record_update>

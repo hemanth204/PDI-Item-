@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>sp_of_units</field>
+        <global>true</global>
+        <messages/>
+        <name>NISF_UPC_Code_Value_Restriction</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+  //Type appropriate comment here, and begin script below
+  var upc_code = g_form.getValue('upc_code');
+  if(upc_code.length!== 11){
+  //alert("UPC number should be 11 digits");
+  g_form.showFieldMsg('upc_code', 'This field must be 11 characters long', 'error');
+  return false;
+  }
+ 
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+        <sys_created_on>2017-08-17 16:08:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4bc3ca07dba00340e93fb96c4e9619d2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>NISF_UPC_Code_Value_Restriction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_client_4bc3ca07dba00340e93fb96c4e9619d2</sys_update_name>
+        <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+        <sys_updated_on>2017-11-07 12:52:17</sys_updated_on>
+        <table>x_rtp_sv_pdi_pack_size_sales</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

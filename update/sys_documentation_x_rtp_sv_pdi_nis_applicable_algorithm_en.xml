@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="applicable_algorithm" label="Applicable Algorithm" language="en" table="x_rtp_sv_pdi_nis">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>applicable_algorithm</element>
+            <help/>
+            <hint/>
+            <label>Applicable Algorithm</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <plural>Applicable Algorithms</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2017-11-07 10:34:49</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>ed1b0bd9db9acf40e93fb96c4e961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Applicable Algorithm</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_nis_applicable_algorithm_en</sys_update_name>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2017-11-07 10:34:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

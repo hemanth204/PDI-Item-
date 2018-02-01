@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,Myhomepage</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+        <sys_created_on>2017-10-06 13:54:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3be54bcfdbe947000713d5ab5e961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,myhomepage</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_ui_view_3be54bcfdbe947000713d5ab5e961903</sys_update_name>
+        <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+        <sys_updated_on>2017-10-06 13:54:35</sys_updated_on>
+        <title>Sys_popup,myhomepage</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

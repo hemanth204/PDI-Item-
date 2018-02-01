@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Category and Group Matrix" max_length="40" name="x_rtp_sv_pdi_pdi_category_and_group_matrix" sizeclass="15000" type="collection">
+        <element label="Brand" max_length="32" name="brand" reference="x_rtp_sv_pdi_product_band" type="reference"/>
+        <element label="Category" max_length="32" name="category" reference="x_rtp_sv_pdi_category" type="reference"/>
+        <element label="Group" max_length="32" name="group" reference="x_rtp_sv_pdi_group" type="reference"/>
+        <element label="Manufacturer" max_length="32" name="manufacturer" reference="x_rtp_sv_pdi_product_manufacturer" type="reference"/>
+        <element label="Size" max_length="32" name="size" reference="x_rtp_sv_pdi_product_size" type="reference"/>
+        <element label="Subgroup" max_length="32" name="subgroup" reference="x_rtp_sv_pdi_sub_group" type="reference"/>
+        <element label="Vendor Description" max_length="32" name="vendor_description" reference="x_rtp_sv_pdi_vendor" type="reference"/>
+        <index name="index">
+            <element name="subgroup"/>
+        </index>
+        <index name="index2">
+            <element name="size"/>
+        </index>
+        <index name="index3">
+            <element name="category"/>
+        </index>
+        <index name="index4">
+            <element name="brand"/>
+        </index>
+        <index name="index5">
+            <element name="group"/>
+        </index>
+        <index name="index6">
+            <element name="manufacturer"/>
+        </index>
+        <index name="index7">
+            <element name="vendor_description"/>
+        </index>
+    </element>
+</database>

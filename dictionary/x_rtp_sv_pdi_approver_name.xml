@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Approver Name" max_length="40" name="x_rtp_sv_pdi_approver_name" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Approver Name" max_length="32" name="approver_name" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <index name="index">
+            <element name="approver_name"/>
+        </index>
+    </element>
+</database>

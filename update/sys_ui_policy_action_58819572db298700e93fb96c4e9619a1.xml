@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>pay_as_invoiced</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+        <sys_created_on>2017-10-05 10:47:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>58819572db298700e93fb96c4e9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>pay_as_invoiced</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_ui_policy_action_58819572db298700e93fb96c4e9619a1</sys_update_name>
+        <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+        <sys_updated_on>2017-10-05 10:47:50</sys_updated_on>
+        <table>x_rtp_sv_pdi_aid</table>
+        <ui_policy display_value="AID_Approval fields population">08a01d32db298700e93fb96c4e9619ca</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

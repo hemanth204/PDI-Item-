@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>AID_Making Field Label as  Bold</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Type appropriate comment here, and begin script below
+	var field_product_type = g_form.getValue('product_type');
+	var prodType = g_form.getLabel('x_rtp_sv_pdi_aid.product_type');
+	var fieldElement_product_type = g_form.getControl(field_product_type);
+	if(field_product_type == "")
+		{
+		prodType.style.fontStyle='italic';
+		prodType.style.fontWeight='bold';
+	}
+	
+	var field_team = g_form.getValue('team');
+	var Team = g_form.getLabel('x_rtp_sv_pdi_aid.team');
+	var fieldElement_team = g_form.getControl(field_team);
+	if(field_team == "")
+		{
+		Team.style.fontStyle='italic';
+		Team.style.fontWeight='bold';
+	}
+	
+	var field_delivery_date = g_form.getValue('delivery_date');
+	var deliveryDate = g_form.getLabel('x_rtp_sv_pdi_aid.delivery_date');
+	var fieldElement_delivery_date = g_form.getControl(field_delivery_date);
+	if(field_delivery_date == "")
+		{
+		deliveryDate.style.fontStyle='italic';
+		deliveryDate.style.fontWeight='bold';
+	}
+	var field_invoice_due_date = g_form.getValue('invoice_due_date');
+	var invoiceDate = g_form.getLabel('x_rtp_sv_pdi_aid.invoice_due_date');
+	var fieldElement_invoice_due_date = g_form.getControl(field_invoice_due_date);
+	if(field_invoice_due_date == "")
+		{
+		invoiceDate.style.fontStyle='italic';
+		invoiceDate.style.fontWeight='bold';
+	}
+	var field_vendor = g_form.getValue('vendor');
+	var Vendor = g_form.getLabel('x_rtp_sv_pdi_aid.vendor');
+	var fieldElement_vendor = g_form.getControl(field_vendor);
+	if(field_vendor == "")
+		{
+		Vendor.style.fontStyle='italic';
+		Vendor.style.fontWeight='bold';
+	}
+	var field_invoice_number = g_form.getValue('invoice_number');
+	var invoiceNumber = g_form.getLabel('x_rtp_sv_pdi_aid.invoice_number');
+	var fieldElement_invoice_number = g_form.getControl(field_invoice_number);
+	if(field_invoice_number == "")
+		{
+		invoiceNumber.style.fontStyle='italic';
+		invoiceNumber.style.fontWeight='bold';
+	}
+	var field_delivered_amount = g_form.getValue('delivered_amount');
+	var deliveredAmount = g_form.getLabel('x_rtp_sv_pdi_aid.delivered_amount');
+	var fieldElement_delivered_amount = g_form.getControl(field_delivered_amount);
+	if(field_delivered_amount == '')
+		{
+		deliveredAmount.style.fontStyle='italic';
+		deliveredAmount.style.fontWeight='bold';
+	}
+	var field_invoice_amount = g_form.getValue('invoice_amount');
+	var invoiceAmount = g_form.getLabel('x_rtp_sv_pdi_aid.invoice_amount');
+	var fieldElement_invoice_amount = g_form.getControl(field_invoice_amount);
+	if(field_invoice_amount == '')
+		{
+		invoiceAmount.style.fontStyle='italic';
+		invoiceAmount.style.fontWeight='bold';
+	}
+	var field_delivered_gallon_amount = g_form.getValue('delivered_gallon_amount');
+	var DelGalonAmount = g_form.getLabel('x_rtp_sv_pdi_aid.delivered_gallon_amount');
+	var fieldElement_delivered_gallon_amount = g_form.getControl(field_delivered_gallon_amount);
+	if(field_delivered_gallon_amount == '')
+		{
+		DelGalonAmount.style.fontStyle='italic';
+		DelGalonAmount.style.fontWeight='bold';
+	}
+	var field_invoice_gallon_amount = g_form.getValue('invoice_gallon_amount');
+	var invoiceGalonAmount = g_form.getLabel('x_rtp_sv_pdi_aid.invoice_gallon_amount');
+	var fieldElement_invoice_gallon_amount = g_form.getControl(field_invoice_gallon_amount);
+	if(field_invoice_gallon_amount == '')
+		{
+		invoiceGalonAmount.style.fontStyle='italic';
+		invoiceGalonAmount.style.fontWeight='bold';
+	}
+	var field_bol_number = g_form.getValue('bol_number');
+	var bolNumber = g_form.getLabel('x_rtp_sv_pdi_aid.bol_number');
+	var fieldElement_bol_number = g_form.getControl(field_bol_number);
+	if(field_bol_number == "")
+		{
+		bolNumber.style.fontStyle='italic';
+		bolNumber.style.fontWeight='bold';
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+        <sys_created_on>2017-10-10 14:38:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8e37710dbb58b00e93fb96c4e961908</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>AID_Making Field Label as  Bold</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_client_a8e37710dbb58b00e93fb96c4e961908</sys_update_name>
+        <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+        <sys_updated_on>2017-12-05 16:41:29</sys_updated_on>
+        <table>x_rtp_sv_pdi_aid</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

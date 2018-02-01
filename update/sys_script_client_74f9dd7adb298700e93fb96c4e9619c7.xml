@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>AID_Mandatory Fields</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	//Type appropriate comment here, and begin script below
+	var action = g_form.getActionName();
+	
+	if (action == 'sysverb_insert_and_stay')
+		return;
+	var aa = g_form.getValue('invoice_type');
+	var pd = g_form.getValue('price_difference');
+	var gd = g_form.getValue('gallon_difference');
+	
+	if(aa=='merchandise'){
+		g_form.setMandatory('product_type', true);
+		//g_form.setMandatory('stage', true);
+		g_form.setMandatory('delivery_date', true);
+		g_form.setMandatory('invoice_due_date', true);
+		//g_form.setMandatory('approval_due_date', true);
+		g_form.setMandatory('vendor', true);
+		g_form.setMandatory('delivered_amount', true);
+		g_form.setMandatory('invoice_amount', true);
+		//g_form.setMandatory('amount_difference', true);
+		g_form.setMandatory('invoice_number', true);
+		//g_form.setMandatory('delivered_gallon_amount', true);
+		//g_form.setMandatory('invoice_gallon_amount', true);
+		
+	}
+	if(aa=='merchandise'){
+		if((g_form.getValue('product_type') == ''|| g_form.getValue('delivery_date') == ''|| g_form.getValue('invoice_due_date') == '' || g_form.getValue('vendor') == '' || g_form.getValue('invoice_number') == '' || g_form.getValue('delivered_amount') == '' || g_form.getValue('invoice_amount') == '' ))
+			return false;
+	}
+	if(aa=='fuel'){
+		g_form.setMandatory('team', true);
+		//g_form.setMandatory('stage', true);
+		g_form.setMandatory('delivery_date', true);
+		//g_form.setMandatory('invoice_due_date', true);
+		//g_form.setMandatory('approval_due_date', true);
+		g_form.setMandatory('vendor', true);
+		g_form.setMandatory('invoice_number', true);
+		g_form.setMandatory('bol_number', true);
+		if(pd == 'true'){
+			g_form.setMandatory('delivered_amount', true);
+			g_form.setMandatory('invoice_amount', true);
+		}
+		if(gd == 'true'){
+			g_form.setMandatory('delivered_gallon_amount', true);
+			g_form.setMandatory('invoice_gallon_amount', true);}
+			//g_form.setMandatory('amount_difference', true);
+		}
+		
+		if(aa=='fuel'){
+			if((g_form.getValue('delivery_date') == ''|| g_form.getValue('vendor') == '' || g_form.getValue('invoice_number') == '' || g_form.getValue('bol_number') == '' || g_form.getValue('team') == ''))
+				return false;
+			if((g_form.getValue('price_difference')=='false') && (g_form.getValue('gallon_difference') == 'false')){
+				alert('Select atleast any one Price or Gallon difference');
+				return false;
+			}
+		}
+	}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+        <sys_created_on>2017-10-05 11:33:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>74f9dd7adb298700e93fb96c4e9619c7</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_name>AID_Mandatory Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_client_74f9dd7adb298700e93fb96c4e9619c7</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2018-01-02 16:23:42</sys_updated_on>
+        <table>x_rtp_sv_pdi_aid</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

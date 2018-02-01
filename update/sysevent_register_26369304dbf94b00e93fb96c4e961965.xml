@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description>Created for notify AID approver</description>
+        <event_name>x_rtp_sv_pdi.aid_notify_approver</event_name>
+        <fired_by>UI actions</fired_by>
+        <queue/>
+        <suffix>AID_notify_approver</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+        <sys_created_on>2017-10-09 17:40:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>26369304dbf94b00e93fb96c4e961965</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_rtp_sv_pdi.aid_notify_approver</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sysevent_register_26369304dbf94b00e93fb96c4e961965</sys_update_name>
+        <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+        <sys_updated_on>2017-10-10 18:46:25</sys_updated_on>
+        <table>x_rtp_sv_pdi_aid</table>
+    </sysevent_register>
+</record_update>

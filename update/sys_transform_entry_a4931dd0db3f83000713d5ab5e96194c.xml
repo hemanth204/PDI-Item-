@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>create</choice_action>
+        <coalesce>true</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="PDI Vendor Import">54a1e858db7b83000713d5ab5e961952</map>
+        <reference_value_field/>
+        <source_field>vendor_phone</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]></source_script>
+        <source_table>x_rtp_sv_pdi_pdi_import_new</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+        <sys_created_on>2018-01-17 12:52:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a4931dd0db3f83000713d5ab5e96194c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>vendor_phone</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_transform_entry_a4931dd0db3f83000713d5ab5e96194c</sys_update_name>
+        <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+        <sys_updated_on>2018-01-17 12:53:59</sys_updated_on>
+        <target_field>vendor_phone</target_field>
+        <target_table>x_rtp_sv_pdi_vendor</target_table>
+        <use_source_script>false</use_source_script>
+    </sys_transform_entry>
+</record_update>

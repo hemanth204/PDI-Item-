@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>incident</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>${mail_script:TimTest}</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Tim Test</name>
+        <sms_alternate/>
+        <subject>This is a test</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>thorn</sys_created_by>
+        <sys_created_on>2017-09-27 13:01:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ba6368d8dba103000713d5ab5e96197f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Tim Test</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sysevent_email_template_ba6368d8dba103000713d5ab5e96197f</sys_update_name>
+        <sys_updated_by>thorn</sys_updated_by>
+        <sys_updated_on>2017-09-28 11:15:25</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

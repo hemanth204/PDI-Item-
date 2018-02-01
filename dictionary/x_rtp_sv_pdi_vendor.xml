@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Vendor" max_length="40" name="x_rtp_sv_pdi_vendor" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Type" max_length="40" name="type" type="string"/>
+        <element label="Vendor Address 1" max_length="100" name="vendor_address_1" type="string"/>
+        <element label="Vendor Address 2" max_length="40" name="vendor_address_2" type="string"/>
+        <element label="Vendor Alt Phone" max_length="40" name="vendor_alt_phone" type="string"/>
+        <element label="Vendor City" max_length="40" name="vendor_city" type="string"/>
+        <element label="Vendor Created Date" max_length="40" name="vendor_created_date" type="glide_date"/>
+        <element display="true" label="Vendor Description" max_length="100" name="vendor_description" type="string"/>
+        <element label="Vendor Email Address" max_length="50" name="vendor_email_address" type="string"/>
+        <element label="Vendor Fax" max_length="40" name="vendor_fax" type="string"/>
+        <element label="Vendor Id" max_length="40" name="vendor_id" type="string"/>
+        <element label="Vendor Name" max_length="100" name="vendor_name" type="string"/>
+        <element label="Vendor Phone" max_length="40" name="vendor_phone" type="string"/>
+        <element label="Vendor Postal Code" max_length="40" name="vendor_postal_code" type="string"/>
+        <element label="Vendor State" max_length="40" name="vendor_state" type="string"/>
+        <element label="Vendor Tax Id" max_length="40" name="vendor_tax_id" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Master Data" max_length="40" name="x_rtp_sv_pdi_master_data" type="collection">
+        <element label="Category" max_length="100" name="category" type="string"/>
+        <element label="Category ID" max_length="100" name="category_id" type="string"/>
+        <element label="Group" max_length="100" name="group" type="string"/>
+        <element label="Group ID" max_length="100" name="group_id" type="string"/>
+        <element label="ItemBrand Description" max_length="100" name="itembrand_description" type="string"/>
+        <element label="ItemBrand ID" max_length="100" name="itembrand_id" type="string"/>
+        <element label="ItemSize Description" max_length="100" name="itemsize_description" type="string"/>
+        <element display="true" label="Item Description" max_length="200" name="item_description" type="string"/>
+        <element label="Item Mfgr Description" max_length="100" name="item_mfgr_description" type="string"/>
+        <element label="Item Mfgr ID" max_length="100" name="item_mfgr_id" type="string"/>
+        <element label="Item MMItem Group Description" max_length="100" name="item_mmitem_group_description" type="string"/>
+        <element label="Item MMItem Group ID" max_length="100" name="item_mmitem_group_id" type="string"/>
+        <element label="Item Number" max_length="100" name="item_number" type="string"/>
+        <element label="Item Type" max_length="100" name="item_type" type="string"/>
+        <element label="Item Type Desc" max_length="100" name="item_type_desc" type="string"/>
+        <element label="Item UPC Number" max_length="100" name="item_upc_number" type="string"/>
+        <element label="Retail Pacakge Code" max_length="100" name="retail_pacakge_code" type="string"/>
+        <element label="Retail Package Quantity" max_length="100" name="retail_package_quantity" type="string"/>
+        <element label="Sub Group" max_length="100" name="sub_group" type="string"/>
+        <element label="Sub Group ID" max_length="100" name="sub_group_id" type="string"/>
+        <element label="Vendor CostZone_Description" max_length="100" name="vendor_costzone_description" type="string"/>
+        <element label="Vendor CostZone ID" max_length="100" name="vendor_costzone_id" type="string"/>
+        <element label="Vendor Description" max_length="100" name="vendor_description" type="string"/>
+        <element label="Vendor ID" max_length="100" name="vendor_id" type="string"/>
+    </element>
+</database>

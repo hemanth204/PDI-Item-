@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PDI Content item" max_length="40" name="x_rtp_sv_pdi_component_item_info" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Component Item " max_length="32" name="component_item" reference="x_rtp_sv_pdi_component_item" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Component Item Number" max_length="32" name="component_pdi" reference="x_rtp_sv_pdi_component_item" type="reference"/>
+        <element label="Content Item Quantity" max_length="40" name="content_item_quantity" type="string"/>
+        <element label="NSS Number" max_length="32" name="nss_number" read_only="true" reference="x_rtp_sv_pdi_nss" type="reference"/>
+        <element label="Package" max_length="32" name="pack" reference="x_rtp_sv_pdi_package1" type="reference"/>
+        <element label="Component Item Description" max_length="32" name="product_description" read_only="true" type="string"/>
+        <index name="index">
+            <element name="nss_number"/>
+        </index>
+        <index name="index2">
+            <element name="component_pdi"/>
+        </index>
+        <index name="index3">
+            <element name="component_item"/>
+        </index>
+        <index name="index4">
+            <element name="pack"/>
+        </index>
+    </element>
+</database>

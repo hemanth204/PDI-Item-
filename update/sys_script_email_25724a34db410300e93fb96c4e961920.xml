@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>PDI_NIS_Reject_Notification</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+	template.print("<html><body><center>");
+    
+	//Hello Message
+	var item1 = new GlideRecord("x_rtp_sv_pdi_nis");
+	item1.addQuery("sys_id", current.sys_id);
+	item1.query();
+	
+	while(item1.next()) {
+		name = item1.submitter_name.getDisplayValue();
+		approverName = item1.approver_name.getDisplayValue();
+		dname = name.split(" ");
+		aname = approverName.split(" ");
+		var lnk1 = '<a href="' + item1.getLink() + '"' + 'style="font-weight:normal;text-decoration:none;color:#ffffff">';
+		//template.print("<br/>");
+template.print("<table style='font-family:verdana;border:none;font-size:20px;font-weight:500;padding-left:15px;width:100%;'>");
+		template.print("<tr style='border:none;'>");
+		
+		template.print("<td style='color:#022169;font-size:16px;' colspan='2'>" + "<br/>"+ dname[0] + "," + "<br/>");
+        template.print("Your item" + "&nbsp;" + item1.number.getDisplayValue() +"&nbsp;"+ "has been rejected by " + aname[0]);
+		// BEGIN TABLE FOR ITERATED LABELS AND VALUES
+		template.print("<br/><br/>");
+		template.print("<table style='color:#676767;width:100%;' cellpadding='0' cellspacing='4'>");
+		//Label
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;'>"+ item1.number.getLabel() + "</td><td style='width:70%;font-size:13px;font-family:verdana;word-break:break-all;'>" + item1.number.getDisplayValue() + "</td>");
+		template.print("</tr>");
+		
+		//Item Description
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;padding-top:-15px;'>"+ item1.product_description.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.product_description.getDisplayValue() + "</td>");
+		template.print("</tr>");
+		
+		//Submitter Name
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;'>"+ item1.submitter_name.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.submitter_name.getDisplayValue() + "</td>");
+		template.print("</tr>");
+		
+		//PDI category
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;'>"+ item1.pdi_category.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.pdi_category.getDisplayValue() + "</td>");
+		template.print("</tr>");
+		
+		
+		//PDI category
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;'>"+ item1.pdi_group.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.pdi_group.getDisplayValue() + "</td>");
+		template.print("</tr>");
+	
+		
+		//PDI Subgroup
+		template.print("<tr>");
+		template.print("<td style='width:30%;font-size:13px;font-family:verdana;text-align:right;padding-right:10px;padding-top:0px;'>"+ item1.pdi_subgroup.getLabel() + "</td><td style='width:70%;font-size:13px;word-break:break-all;font-family:verdana;'>" + item1.pdi_subgroup.getDisplayValue() + "</td>");
+template.print("</tr>");
+		
+		//Empty space beneath
+		template.print("<tr>");
+		template.print("<td><p>&nbsp;</p></td>");
+template.print("</tr>");
+		
+		
+template.print("</table>");
+
+template.print("</td>");
+template.print("</tr>");
+template.print("</table>");
+template.print("</center>");
+template.print("</body>");
+template.print("</html>");
+			
+	}
+
+          // Add your code here
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>v-ArjitArora</sys_created_by>
+        <sys_created_on>2017-09-04 12:44:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>25724a34db410300e93fb96c4e961920</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>PDI_NIS_Reject_Notification</sys_name>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>sys_script_email_25724a34db410300e93fb96c4e961920</sys_update_name>
+        <sys_updated_by>v-ArjitArora</sys_updated_by>
+        <sys_updated_on>2017-11-16 17:04:28</sys_updated_on>
+    </sys_script_email>
+</record_update>

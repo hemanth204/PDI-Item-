@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="1100_dallas" label="1100 Dallas" language="en" table="x_rtp_sv_pdi_nis">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>1100_dallas</element>
+            <help/>
+            <hint/>
+            <label>1100 Dallas</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_nis</name>
+            <plural>1100 Dallas</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2017-11-07 12:05:23</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>d4df171ddbdacf40e93fb96c4e9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>1100 Dallas</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_documentation_x_rtp_sv_pdi_nis_1100_dallas_en</sys_update_name>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2017-11-07 12:05:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

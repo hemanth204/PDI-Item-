@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="contract_sla">
+    <contract_sla action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cancel_condition/>
+        <collection>x_rtp_sv_pdi_aid_subtask</collection>
+        <condition_class/>
+        <duration>1970-01-03 00:00:00</duration>
+        <duration_type/>
+        <enable_logging>true</enable_logging>
+        <name>AID 2 Days SLA</name>
+        <pause_condition/>
+        <relative_duration_works_on>Task record</relative_duration_works_on>
+        <reset_action/>
+        <reset_condition/>
+        <resume_condition/>
+        <retroactive>true</retroactive>
+        <retroactive_pause>false</retroactive_pause>
+        <schedule/>
+        <schedule_source>no_schedule</schedule_source>
+        <schedule_source_field/>
+        <set_start_to>work_start</set_start_to>
+        <start_condition table="x_rtp_sv_pdi_aid_subtask">assignment_group=aabe2b76dbed87004f2bb96c4e96199f^ORassignment_group=e6be2b76dbed87004f2bb96c4e961968^ORassignment_group=1abe2b76dbed87004f2bb96c4e961928^ORassignment_group=7ecca04edb2ecb005bd3d5ab5e96191d^ORassignment_group=72cca04edb2ecb005bd3d5ab5e961923^EQ<item endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="false" value="aabe2b76dbed87004f2bb96c4e96199f"/>
+            <item endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="true" value="e6be2b76dbed87004f2bb96c4e961968"/>
+            <item endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="true" value="1abe2b76dbed87004f2bb96c4e961928"/>
+            <item endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="true" value="7ecca04edb2ecb005bd3d5ab5e96191d"/>
+            <item endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="true" value="72cca04edb2ecb005bd3d5ab5e961923"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </start_condition>
+        <stop_condition table="x_rtp_sv_pdi_aid_subtask">state=3^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </stop_condition>
+        <sys_class_name>contract_sla</sys_class_name>
+        <sys_created_by>v-kannadhasanamirtha</sys_created_by>
+        <sys_created_on>2017-10-27 16:57:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9308f7b1db8683400713d5ab5e961918</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>AID 2 Days SLA</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+        <sys_update_name>contract_sla_9308f7b1db8683400713d5ab5e961918</sys_update_name>
+        <sys_updated_by>v-kannadhasanamirtha</sys_updated_by>
+        <sys_updated_on>2017-12-04 15:36:48</sys_updated_on>
+        <target/>
+        <timezone/>
+        <timezone_source>task.caller_id.time_zone</timezone_source>
+        <type>SLA</type>
+        <when_to_cancel>on_condition</when_to_cancel>
+        <when_to_resume>on_condition</when_to_resume>
+        <workflow/>
+    </contract_sla>
+</record_update>

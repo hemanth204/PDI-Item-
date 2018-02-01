@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="store_selection" table="x_rtp_sv_pdi_mclane_table" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>store_selection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>All Stores</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_mclane_table</name>
+            <sequence>0</sequence>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-22 09:49:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26376cd8db8e8340e93fb96c4e961995</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2017-12-19 16:54:04</sys_updated_on>
+            <value>all_stores</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>store_selection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Area</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_mclane_table</name>
+            <sequence>1</sequence>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-22 09:47:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1cd668d8db8e8340e93fb96c4e9619d3</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2017-12-19 16:54:12</sys_updated_on>
+            <value>area</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>store_selection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Region</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_mclane_table</name>
+            <sequence>2</sequence>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-22 09:48:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5de6e4d8db8e8340e93fb96c4e961911</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2017-12-19 16:54:16</sys_updated_on>
+            <value>region</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>store_selection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Stores</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_mclane_table</name>
+            <sequence>3</sequence>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-22 09:49:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0307e4d8db8e8340e93fb96c4e961914</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2017-12-19 16:54:24</sys_updated_on>
+            <value>stores</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>store_selection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Site Traits</label>
+            <language>en</language>
+            <name>x_rtp_sv_pdi_mclane_table</name>
+            <sequence>4</sequence>
+            <sys_created_by>v-sivakrishnaiahb</sys_created_by>
+            <sys_created_on>2017-12-18 17:31:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89937762db8bcf00e93fb96c4e96199e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>v-sivakrishnaiahb</sys_updated_by>
+            <sys_updated_on>2017-12-19 16:54:20</sys_updated_on>
+            <value>site traits</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>store_selection</element>
+            <name>x_rtp_sv_pdi_mclane_table</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>v-hemanthsiramdasu</sys_created_by>
+            <sys_created_on>2017-10-22 09:47:49</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7a05997adbb30300351059d0cf9619ea</sys_id>
+            <sys_mod_count>22</sys_mod_count>
+            <sys_name>store_selection</sys_name>
+            <sys_package display_value="PDI Item Management" source="x_rtp_sv_pdi">6b04b582dbc88740e93fb96c4e9619db</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PDI Item Management">6b04b582dbc88740e93fb96c4e9619db</sys_scope>
+            <sys_update_name>sys_choice_x_rtp_sv_pdi_mclane_table_store_selection</sys_update_name>
+            <sys_updated_by>v-hemanthsiramdasu</sys_updated_by>
+            <sys_updated_on>2017-10-23 15:25:56</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
